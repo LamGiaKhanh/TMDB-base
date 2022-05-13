@@ -1,0 +1,30 @@
+{
+  "name": "TEQNetwork",
+  "version": "1.0.0",
+  "summary": "A short description of TEQNetwork.",
+  "description": "Network wrapper for Teqnological Asia's projects.",
+  "homepage": "https://git.teqnological.asia/iOS/teqnetwork.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Nghia Nguyen": "nghianguyen@teqnological.asia"
+  },
+  "source": {
+    "git": "https://git.teqnological.asia/iOS/teqnetwork.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Sources/TEQNetwork/**/*.swift",
+  "dependencies": {
+    "RxSwift": [
+      "~> 5.1.1"
+    ],
+    "Alamofire": [
+      "~> 5.1.0"
+    ]
+  }
+}

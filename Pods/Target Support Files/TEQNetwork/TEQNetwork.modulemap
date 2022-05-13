@@ -1,0 +1,6 @@
+framework module TEQNetwork {
+  umbrella header "TEQNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

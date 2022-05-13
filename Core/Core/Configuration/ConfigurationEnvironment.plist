@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Common</key>
+	<dict>
+		<key>MockApiUrl</key>
+		<string>https://swagger.draco37-dev.net</string>
+	</dict>
+	<key>Development</key>
+	<dict>
+		<key>AppleAppID</key>
+		<string>1495287982</string>
+		<key>AppsFlyerDevKey</key>
+		<string>jcvhM8xtJcCcmqTfGtXH9e</string>
+		<key>AdobeAppId</key>
+		<string>c8cd7ac52923/f41d61cec987/launch-dd2fc76eb8f8-development</string>
+		<key>BaseApiUrl</key>
+		<string>https://api.draco37-dev.net</string>
+		<key>ConstApiUrl</key>
+		<string>https://cdn.draco37-dev.net</string>
+		<key>AWSClientId</key>
+		<string>78erhfpe2t9tngoe1h55cf4ct5</string>
+		<key>AWSUserPoolId</key>
+		<string>ap-northeast-1_MiUKVlqV9</string>
+	</dict>
+	<key>Staging</key>
+	<dict>
+		<key>AppleAppID</key>
+		<string>1495288344</string>
+		<key>AppsFlyerDevKey</key>
+		<string>jcvhM8xtJcCcmqTfGtXH9e</string>
+		<key>AdobeAppId</key>
+		<string>c8cd7ac52923/f41d61cec987/launch-9a9314736b9c-staging</string>
+		<key>BaseApiUrl</key>
+		<string>https://api.draco37-stg.net</string>
+		<key>ConstApiUrl</key>
+		<string>https://cdn.draco37-stg.net</string>
+		<key>AWSClientId</key>
+		<string>3gcs63726v97udq7fkj7j62irg</string>
+		<key>AWSUserPoolId</key>
+		<string></string>
+	</dict>
+	<key>Production</key>
+	<dict>
+		<key>AppleAppID</key>
+		<string>1495288264</string>
+		<key>AppsFlyerDevKey</key>
+		<string>jcvhM8xtJcCcmqTfGtXH9e</string>
+		<key>AdobeAppId</key>
+		<string>c8cd7ac52923/f41d61cec987/launch-ea6dae4d8510</string>
+		<key>BaseApiUrl</key>
+		<string>https://api.wealth-wing.com</string>
+		<key>ConstApiUrl</key>
+		<string>https://res.wealth-wing.com</string>
+		<key>AWSClientId</key>
+		<string>5fo8m3juvhe4d61muvtrsfrkcp</string>
+		<key>AWSUserPoolId</key>
+		<string>ap-northeast-1_jKPNTawpw</string>
+	</dict>
+</dict>
+</plist>
