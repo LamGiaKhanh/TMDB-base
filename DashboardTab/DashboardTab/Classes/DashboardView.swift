@@ -35,7 +35,7 @@ struct DashboardView: View {
         .overlay(
             Button("Logout") {
                 viewModel.logout()
-            },
+            }.padding(),
             alignment: .topTrailing
         )
     }

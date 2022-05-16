@@ -25,6 +25,7 @@ def data_pods
   pod 'TEQNetwork', :git => 'https://github.com/Teqnological-Asia/TEQNetwork.git'
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+  pod 'Moya'
 end
 
 target 'Data' do
@@ -44,6 +45,13 @@ end
 # DashboardTab
 target 'DashboardTab' do
   project 'DashboardTab/DashboardTab.xcproject'
+
+  core_pods
+end
+
+# SearchMovie
+target 'SearchMovie' do
+  project 'SearchMovie/SearchMovie.xcproject'
 
   core_pods
 end

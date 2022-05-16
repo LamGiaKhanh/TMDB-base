@@ -9,6 +9,7 @@ import Core
 import Domain
 import Data
 import DashboardTab
+import SearchMovie
 
 class DIInitializer: Initializable {
     func performInitialization() {
@@ -18,7 +19,8 @@ class DIInitializer: Initializable {
             DataAssembly(),
             AppServicesAssembly(),
             ScenesAssembly(),
-            DashboardTabAssembly()
+            DashboardTabAssembly(),
+            SearchMovieAssembly()
         ])
     }
 }

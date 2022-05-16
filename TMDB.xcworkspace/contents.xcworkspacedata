@@ -25,4 +25,7 @@
    <FileRef
       location = "group:DashboardTab/DashboardTab.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SearchMovie/SearchMovie.xcodeproj">
+   </FileRef>
 </Workspace>

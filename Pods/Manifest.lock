@@ -26,6 +26,10 @@ PODS:
   - AWSPluginsCore (1.24.0):
     - Amplify (= 1.24.0)
     - AWSCore (~> 2.27.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - RxSwift (5.1.3)
   - Swinject (2.8.1)
   - TEQNetwork (1.0.0):
@@ -35,6 +39,7 @@ PODS:
 DEPENDENCIES:
   - Amplify
   - AmplifyPlugins/AWSCognitoAuthPlugin
+  - Moya
   - Swinject
   - TEQNetwork (from `https://github.com/Teqnological-Asia/TEQNetwork.git`)
 
@@ -49,6 +54,7 @@ SPEC REPOS:
     - AWSCore
     - AWSMobileClient
     - AWSPluginsCore
+    - Moya
     - RxSwift
     - Swinject
 
@@ -71,10 +77,11 @@ SPEC CHECKSUMS:
   AWSCore: f5ad61eafb16c9f68611046e98b87cc2f5c482d0
   AWSMobileClient: 5bda79e67970b40e70bfafd9e0564fa33b872b20
   AWSPluginsCore: c8aa73551a541a11b24e72a9f145bbfc01a56379
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
   TEQNetwork: 6470f1d6f6f2da2bf3d3236d152744da976a11fd
 
-PODFILE CHECKSUM: d8f12a5b7d4f1d2006c75880358fa74238a0b5ca
+PODFILE CHECKSUM: 41abb16616f9b3881ba13841bd537df0fcfe84e1
 
 COCOAPODS: 1.11.2

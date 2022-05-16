@@ -8,6 +8,7 @@
 import SwiftUI
 import Core
 import DashboardTab
+import SearchMovie
 
 struct HomeNavigatorView: View {
     @Store var navigator: HomeNavigator
@@ -16,7 +17,7 @@ struct HomeNavigatorView: View {
         TabView(selection: $navigator.tabSelected) {
             DashboardNavigatorView(navigator: navigator.dashboardNavigator)
                 .modifier(TabItem(.home))
-            Text("Search")
+            SearchMovieNavigatorView(navigator: navigator.searchNavigator)
                 .modifier(TabItem(.search))
         }
     }

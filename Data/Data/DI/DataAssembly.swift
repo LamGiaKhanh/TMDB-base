@@ -44,5 +44,9 @@ public class DataAssembly: Assembly {
         container.register(TokenService.self) { _ in
             TokenServiceImpl()
         }.inObjectScope(.container)
+        
+        container.register(MovieService.self) { _ in
+            MovieServiceImpl()
+        }
     }
 }

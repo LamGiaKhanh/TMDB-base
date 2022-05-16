@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2492F48BAC4176A8D50D3E59 /* Pods_Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C23DA9B1CEE8F8DD243375 /* Pods_Resources.framework */; };
+		3906F6482831FD7900CA42DE /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6472831FD7900CA42DE /* SearchField.swift */; };
+		3906F64A2831FD9F00CA42DE /* SearchTextObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6492831FD9F00CA42DE /* SearchTextObservable.swift */; };
+		3906F64D2831FE0000CA42DE /* OffsetTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F64C2831FE0000CA42DE /* OffsetTop.swift */; };
+		3906F6502831FEB400CA42DE /* PopularityBagde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F64F2831FEB400CA42DE /* PopularityBagde.swift */; };
 		391DEDD4282E365200282BAB /* PointRandomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD1282E365200282BAB /* PointRandomization.swift */; };
 		391DEDD5282E365200282BAB /* ColorfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD2282E365200282BAB /* ColorfulView.swift */; };
 		391DEDD6282E365200282BAB /* Colorful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD3282E365200282BAB /* Colorful.swift */; };
@@ -34,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		298C87B85182F0B6CF2307F6 /* Pods-Resources.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resources.release.xcconfig"; path = "Target Support Files/Pods-Resources/Pods-Resources.release.xcconfig"; sourceTree = "<group>"; };
+		3906F6472831FD7900CA42DE /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		3906F6492831FD9F00CA42DE /* SearchTextObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextObservable.swift; sourceTree = "<group>"; };
+		3906F64C2831FE0000CA42DE /* OffsetTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetTop.swift; sourceTree = "<group>"; };
+		3906F64F2831FEB400CA42DE /* PopularityBagde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularityBagde.swift; sourceTree = "<group>"; };
 		391DEDD1282E365200282BAB /* PointRandomization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointRandomization.swift; sourceTree = "<group>"; };
 		391DEDD2282E365200282BAB /* ColorfulView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorfulView.swift; sourceTree = "<group>"; };
 		391DEDD3282E365200282BAB /* Colorful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colorful.swift; sourceTree = "<group>"; };
@@ -74,9 +82,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3906F6462831FD5800CA42DE /* SearchField */ = {
+			isa = PBXGroup;
+			children = (
+				3906F6472831FD7900CA42DE /* SearchField.swift */,
+				3906F6492831FD9F00CA42DE /* SearchTextObservable.swift */,
+			);
+			path = SearchField;
+			sourceTree = "<group>";
+		};
+		3906F64B2831FDEF00CA42DE /* PreferenceKey */ = {
+			isa = PBXGroup;
+			children = (
+				3906F64C2831FE0000CA42DE /* OffsetTop.swift */,
+			);
+			path = PreferenceKey;
+			sourceTree = "<group>";
+		};
+		3906F64E2831FEA500CA42DE /* PopularityBagde */ = {
+			isa = PBXGroup;
+			children = (
+				3906F64F2831FEB400CA42DE /* PopularityBagde.swift */,
+			);
+			path = PopularityBagde;
+			sourceTree = "<group>";
+		};
 		391DEDCE282E361A00282BAB /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				3906F64E2831FEA500CA42DE /* PopularityBagde */,
+				3906F64B2831FDEF00CA42DE /* PreferenceKey */,
+				3906F6462831FD5800CA42DE /* SearchField */,
 				391DEDE2282E3F3700282BAB /* GrowingButton */,
 				391DEDD0282E365200282BAB /* ColorfulView */,
 			);
@@ -299,22 +335,26 @@
 			files = (
 				78EAE2F5282A581000610735 /* Fonts.swift in Sources */,
 				78EAE2F2282A581000610735 /* ImageProviding.swift in Sources */,
+				3906F6482831FD7900CA42DE /* SearchField.swift in Sources */,
 				78EAE2ED282A581000610735 /* Strings.swift in Sources */,
 				78EAE2F1282A581000610735 /* FontProviding.swift in Sources */,
 				391DEDD4282E365200282BAB /* PointRandomization.swift in Sources */,
 				78EAE2F7282A581000610735 /* Images.swift in Sources */,
 				78EAE326282A5BC600610735 /* UIColor++.swift in Sources */,
 				78EAE2F3282A581000610735 /* ColorProviding.swift in Sources */,
+				3906F64A2831FD9F00CA42DE /* SearchTextObservable.swift in Sources */,
 				78EAE2F4282A581000610735 /* Localizable.swift in Sources */,
 				78EAE325282A5BC600610735 /* UIFont++.swift in Sources */,
 				78EAE324282A5BC600610735 /* UIImage++.swift in Sources */,
 				391DEDE4282E3F4600282BAB /* GrowingButton.swift in Sources */,
+				3906F6502831FEB400CA42DE /* PopularityBagde.swift in Sources */,
 				78EAE2F6282A581000610735 /* ResourcesBundle.swift in Sources */,
 				78EAE32A282A5C8500610735 /* Color++.swift in Sources */,
 				391DEDD6282E365200282BAB /* Colorful.swift in Sources */,
 				78EAE329282A5C8500610735 /* Image++.swift in Sources */,
 				391DEDD5282E365200282BAB /* ColorfulView.swift in Sources */,
 				78EAE2EC282A581000610735 /* Colors.swift in Sources */,
+				3906F64D2831FE0000CA42DE /* OffsetTop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

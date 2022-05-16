@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391DEE7A282E607F00282BAB /* MovieServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEE79282E607F00282BAB /* MovieServiceImpl.swift */; };
 		542B0BBCED374EA69B1BA449 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A57801B096066D93444E20 /* Pods_Data.framework */; };
 		78A5F47F2824DA7D00E7A819 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A5F47E2824DA7D00E7A819 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78A5F4932824DE2900E7A819 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5F4882824DE2900E7A819 /* Enum.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		391DEE79282E607F00282BAB /* MovieServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceImpl.swift; sourceTree = "<group>"; };
 		554FAA1D7DBCF3D3EA1DDB3C /* Pods-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.debug.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.debug.xcconfig"; sourceTree = "<group>"; };
 		78A5F47B2824DA7D00E7A819 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A5F47E2824DA7D00E7A819 /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				78A5F48D2824DE2900E7A819 /* AmazonServiceImpl.swift */,
 				78A5F48E2824DE2900E7A819 /* NetworkRequestRetrier.swift */,
 				78A5F48F2824DE2900E7A819 /* KabuPlusServiceImpl.swift */,
+				391DEE79282E607F00282BAB /* MovieServiceImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			files = (
 				78A5F49A2824DE2900E7A819 /* EmptyEntity.swift in Sources */,
 				78A5F4992824DE2900E7A819 /* ObjectEntity.swift in Sources */,
+				391DEE7A282E607F00282BAB /* MovieServiceImpl.swift in Sources */,
 				78A5F4952824DE2900E7A819 /* TokenServiceImpl.swift in Sources */,
 				78A5F4932824DE2900E7A819 /* Enum.swift in Sources */,
 				78A5F4982824DE2900E7A819 /* KabuPlusServiceImpl.swift in Sources */,

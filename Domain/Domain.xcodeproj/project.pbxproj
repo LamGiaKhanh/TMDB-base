@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391DEE50282E590B00282BAB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEE4F282E590B00282BAB /* Movie.swift */; };
+		391DEE53282E59AE00282BAB /* SearchMovieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEE52282E59AE00282BAB /* SearchMovieUseCase.swift */; };
+		391DEE7E282E66D200282BAB /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEE7D282E66D200282BAB /* MovieService.swift */; };
 		6958C6701430A3D8E86C4170 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D8F077A2266F6A9E04A519 /* Pods_Domain.framework */; };
 		78A5F4B22824DEEB00E7A819 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A5F4B12824DEEB00E7A819 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78A5F4C62824DFA800E7A819 /* RefreshTokenUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5F4B92824DFA800E7A819 /* RefreshTokenUseCase.swift */; };
@@ -48,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		33D8F077A2266F6A9E04A519 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391DEE4F282E590B00282BAB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		391DEE52282E59AE00282BAB /* SearchMovieUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieUseCase.swift; sourceTree = "<group>"; };
+		391DEE7D282E66D200282BAB /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		78A5F4AE2824DEEB00E7A819 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A5F4B12824DEEB00E7A819 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		78A5F4B92824DFA800E7A819 /* RefreshTokenUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTokenUseCase.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 				78A5F4BA2824DFA800E7A819 /* LogOutUseCase.swift */,
 				78A5F4BB2824DFA800E7A819 /* AuthenticateUseCase.swift */,
 				78A5F4BC2824DFA800E7A819 /* UseCase.swift */,
+				391DEE52282E59AE00282BAB /* SearchMovieUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -142,6 +149,7 @@
 			children = (
 				78A5F4BE2824DFA800E7A819 /* AWSAuthenFlowType.swift */,
 				78A5F4BF2824DFA800E7A819 /* SessionData.swift */,
+				391DEE4F282E590B00282BAB /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 				78A5F4C32824DFA800E7A819 /* KabuPlusService.swift */,
 				78A5F4C42824DFA800E7A819 /* AmazonService.swift */,
 				78A5F4C52824DFA800E7A819 /* TokenService.swift */,
+				391DEE7D282E66D200282BAB /* MovieService.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -308,10 +317,13 @@
 				78A5F4C92824DFA800E7A819 /* UseCase.swift in Sources */,
 				78A5F4CE2824DFA800E7A819 /* AmazonService.swift in Sources */,
 				78A5F4C82824DFA800E7A819 /* AuthenticateUseCase.swift in Sources */,
+				391DEE53282E59AE00282BAB /* SearchMovieUseCase.swift in Sources */,
 				78A5F4CA2824DFA800E7A819 /* AWSAuthenFlowType.swift in Sources */,
 				78A5F4CB2824DFA800E7A819 /* SessionData.swift in Sources */,
 				78A5F4C72824DFA800E7A819 /* LogOutUseCase.swift in Sources */,
+				391DEE50282E590B00282BAB /* Movie.swift in Sources */,
 				78A5F4CF2824DFA800E7A819 /* TokenService.swift in Sources */,
+				391DEE7E282E66D200282BAB /* MovieService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

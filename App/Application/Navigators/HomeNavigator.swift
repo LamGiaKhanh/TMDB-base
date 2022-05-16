@@ -9,10 +9,12 @@ import Foundation
 import Combine
 import Core
 import DashboardTab
+import SearchMovie
 
 protocol HomeNavigator: NavigatorModel, Stepper {
     var tabSelected: MainTab { get set }
     var dashboardNavigator: DashboardNavigator { get set }
+    var searchNavigator: SearchMovieNavigator { get set }
 }
 
 enum HomeStep: Step {
@@ -26,6 +28,7 @@ class HomeNavigatorImpl: HomeNavigator, ObservableObject {
     @Published var tabSelected: MainTab
     
     @Injected var dashboardNavigator: DashboardNavigator
+    @Injected var searchNavigator: SearchMovieNavigator
     
     deinit {
         print("HomeNavigatorImpl deinit")
@@ -34,7 +37,8 @@ class HomeNavigatorImpl: HomeNavigator, ObservableObject {
     init() {
         tabSelected = .home
         contribute([
-            dashboardNavigator
+            dashboardNavigator,
+            searchNavigator
         ])
     }
     

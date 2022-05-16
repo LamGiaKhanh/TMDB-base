@@ -31,6 +31,7 @@
 		391DEDB7282E2E1C00282BAB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDB6282E2E1C00282BAB /* LoginView.swift */; };
 		391DEDBD282E2FD700282BAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDBC282E2FD700282BAB /* ContentView.swift */; };
 		391DEDBF282E321300282BAB /* LoginNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDBE282E321300282BAB /* LoginNavigatorView.swift */; };
+		391DEE25282E574700282BAB /* SearchMovie.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 391DEE24282E542D00282BAB /* SearchMovie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B54CA26939075892DE65217A /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16361D954F76E664C64A3FE5 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,13 @@
 			remoteGlobalIDString = 391DED74282E128400282BAB;
 			remoteInfo = DashboardTab;
 		};
+		391DEE23282E542D00282BAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 391DEE1A282E542D00282BAB /* SearchMovie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 391DEDFA282E537800282BAB;
+			remoteInfo = SearchMovie;
+		};
 		3937E9C8282E098E005954E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3937E9AF282E098B005954E5 /* Project object */;
@@ -93,6 +101,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				391DEE25282E574700282BAB /* SearchMovie.framework in Copy Frameworks */,
 				391DED02282E0DBB00282BAB /* Resources.framework in Copy Frameworks */,
 				391DECDC282E0BF600282BAB /* Core.framework in Copy Frameworks */,
 				391DED00282E0DAE00282BAB /* Data.framework in Copy Frameworks */,
@@ -132,6 +141,7 @@
 		391DEDBC282E2FD700282BAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		391DEDBE282E321300282BAB /* LoginNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigatorView.swift; sourceTree = "<group>"; };
 		391DEDC0282E345500282BAB /* AWSAuthCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSAuthCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391DEE1A282E542D00282BAB /* SearchMovie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SearchMovie.xcodeproj; path = ../SearchMovie/SearchMovie.xcodeproj; sourceTree = "<group>"; };
 		3937E9B7282E098B005954E5 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3937E9C7282E098E005954E5 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3937E9D1282E098E005954E5 /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,6 +312,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		391DEE1B282E542D00282BAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				391DEE24282E542D00282BAB /* SearchMovie.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3937E9AE282E098B005954E5 = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +352,7 @@
 				391DECF4282E0DA100282BAB /* Domain.xcodeproj */,
 				391DECFA282E0DA600282BAB /* Resources.xcodeproj */,
 				391DED85282E12BD00282BAB /* DashboardTab.xcodeproj */,
+				391DEE1A282E542D00282BAB /* SearchMovie.xcodeproj */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
@@ -463,6 +482,10 @@
 					ProductGroup = 391DECFB282E0DA600282BAB /* Products */;
 					ProjectRef = 391DECFA282E0DA600282BAB /* Resources.xcodeproj */;
 				},
+				{
+					ProductGroup = 391DEE1B282E542D00282BAB /* Products */;
+					ProjectRef = 391DEE1A282E542D00282BAB /* SearchMovie.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -507,6 +530,13 @@
 			fileType = wrapper.framework;
 			path = DashboardTab.framework;
 			remoteRef = 391DED8A282E12BD00282BAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		391DEE24282E542D00282BAB /* SearchMovie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SearchMovie.framework;
+			remoteRef = 391DEE23282E542D00282BAB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

@@ -21,5 +21,8 @@ public class DomainAssembly: Assembly {
         container.register(RefreshTokenUseCase.self) { _ in
             RefreshTokenUseCase()
         }
+        container.register(SearchMovieUseCase.self) { _ in
+            SearchMovieUseCase()
+        }
     }
 }
