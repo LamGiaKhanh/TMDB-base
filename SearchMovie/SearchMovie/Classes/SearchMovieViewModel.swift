@@ -5,31 +5,35 @@
 //  Created by ExecutionLab's Macbook on 13/05/2022.
 //
 
-import Foundation
 import Core
 import Combine
 import Domain
+import Resources
 
 public protocol SearchMovieViewModel: ViewModel, Stepper {
-    func searchMovie(input: String)
+    var movieList: [Movie] { get set }
+    
+    func onUpdateTextDebounced(text: String)
 }
 
-public class SearchMovieViewModelImpl: SearchMovieViewModel, ObservableObject {
+public final class SearchMovieViewModelImpl: SearchTextObservable, SearchMovieViewModel {
     public var cancellables = Set<AnyCancellable>()
     public let steps = PassthroughSubject<Step, Never>()
         
     @Injected var searchMovieUseCase: SearchMovieUseCase
     
-    public init() { }
+    @Published public var movieList: [Movie] = []
     
-    public func searchMovie(input: String)  {
-        searchMovieUseCase.callAsFunction(input)
+    public override func onUpdateTextDebounced(text: String) {
+        searchMovieUseCase(text)
             .sink(receiveCompletion: { error in
                 return
-            }, receiveValue: { movieListResponse in
+            }, receiveValue: { [weak self] movieListResponse in
                 print("MOVIES: \(movieListResponse)")
-                return
+                self?.movieList = movieListResponse.movies
             })
         .store(in: &cancellables)
     }
+    
 }
+

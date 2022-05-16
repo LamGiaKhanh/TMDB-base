@@ -1,43 +1,54 @@
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let movieListResponse = try? newJSONDecoder().decode(MovieListResponse.self, from: jsonData)
+//   public let movieListResponse = try? newJSONDecoder().decode(MovieListResponse.self, from: jsonData)
 
 import Foundation
 
 // MARK: - MovieListResponse
 public struct MovieListResponse: Codable {
-    let dates: Dates?
-    let page: Int?
-    let results: [Movie]?
-    let totalPages, totalResults: Int?
+    public let dates: Dates
+    public let page: Int
+    public let movies: [Movie]
+    public let totalPages, totalResults: Int
 
     enum CodingKeys: String, CodingKey {
-        case dates, page, results
+        case dates, page
+        case movies = "results"
         case totalPages = "total_pages"
         case totalResults = "total_results"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+
+        dates = try values.decodeIfPresent(Dates.self, forKey: .dates) ?? Dates(maximum: "", minimum: "")
+        page = try values.decodeIfPresent(Int.self, forKey: .page) ?? 0
+        movies = try values.decodeIfPresent([Movie].self, forKey: .movies) ?? []
+        totalPages = try values.decodeIfPresent(Int.self, forKey: .totalPages) ?? 0
+        totalResults = try values.decodeIfPresent(Int.self, forKey: .totalResults) ?? 0
     }
 }
 
 // MARK: - Dates
 public struct Dates: Codable {
-    let maximum, minimum: String?
+    public let maximum, minimum: String
 }
 
-// MARK: - Movie
-public struct Movie: Codable {
-    let adult: Bool?
-    let backdropPath: String?
-    let genreIDS: [Int]?
-    let id: Int?
-    let originalLanguage: OriginalLanguage?
-    let originalTitle, overview: String?
-    let popularity: Double?
-    let posterPath, releaseDate, title: String?
-    let video: Bool?
-    let voteAverage: Double?
-    let voteCount: Int?
-
+// MARK: - Result
+public struct Movie: Codable, Identifiable {
+    public let adult: Bool
+    public let backdropPath: String
+    public let genreIDS: [Int]
+    public let id: Int
+    public let originalLanguage: String
+    public let originalTitle, overview: String
+    public let popularity: Double
+    public let posterPath, releaseDate, title: String
+    public let video: Bool
+    public let voteAverage: Double
+    public let voteCount: Int
+    
     enum CodingKeys: String, CodingKey {
         case adult
         case backdropPath = "backdrop_path"
@@ -51,6 +62,25 @@ public struct Movie: Codable {
         case title, video
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+
+        adult = try values.decodeIfPresent(Bool.self, forKey: .adult) ?? false
+        backdropPath = try values.decodeIfPresent(String.self, forKey: .backdropPath) ?? ""
+        genreIDS = try values.decodeIfPresent([Int].self, forKey: .genreIDS) ?? []
+        id = try values.decodeIfPresent(Int.self, forKey: .id) ?? 0
+        originalLanguage = try values.decodeIfPresent(String.self, forKey: .originalLanguage) ?? ""
+        originalTitle = try values.decodeIfPresent(String.self, forKey: .originalTitle) ?? ""
+        overview = try values.decodeIfPresent(String.self, forKey: .overview) ?? ""
+        popularity = try values.decodeIfPresent(Double.self, forKey: .popularity) ?? 0
+        posterPath = try values.decodeIfPresent(String.self, forKey: .posterPath) ?? ""
+        releaseDate = try values.decodeIfPresent(String.self, forKey: .releaseDate) ?? ""
+        title = try values.decodeIfPresent(String.self, forKey: .title) ?? ""
+        video = try values.decodeIfPresent(Bool.self, forKey: .video) ?? false
+        voteAverage = try values.decodeIfPresent(Double.self, forKey: .voteAverage) ?? 0
+        voteCount = try values.decodeIfPresent(Int.self, forKey: .voteCount) ?? 0
     }
 }
 

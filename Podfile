@@ -15,11 +15,6 @@ target 'Core' do
   core_pods
 end
 
-# Resources
-target 'Resources' do
-  project 'Resources/Resources.xcproject'
-end
-
 # Data
 def data_pods
   pod 'TEQNetwork', :git => 'https://github.com/Teqnological-Asia/TEQNetwork.git'
@@ -56,12 +51,23 @@ target 'SearchMovie' do
   core_pods
 end
 
+# Resources
+def resources_pods
+  pod 'SDWebImageSwiftUI'
+end
+
+target 'Resources' do
+  project 'Resources/Resources.xcproject'
+  resources_pods
+end
+
 # App
 target 'App' do
   project 'App/App.xcproject'
 
   core_pods
   data_pods
+  resources_pods
 end
 
 post_install do |installer|
@@ -71,3 +77,4 @@ post_install do |installer|
     end
   end
 end
+

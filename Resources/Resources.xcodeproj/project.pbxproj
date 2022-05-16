@@ -12,6 +12,11 @@
 		3906F64A2831FD9F00CA42DE /* SearchTextObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6492831FD9F00CA42DE /* SearchTextObservable.swift */; };
 		3906F64D2831FE0000CA42DE /* OffsetTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F64C2831FE0000CA42DE /* OffsetTop.swift */; };
 		3906F6502831FEB400CA42DE /* PopularityBagde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F64F2831FEB400CA42DE /* PopularityBagde.swift */; };
+		3906F675283236EF00CA42DE /* MovieRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F674283236EE00CA42DE /* MovieRows.swift */; };
+		3906F6882832396300CA42DE /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6872832396300CA42DE /* MovieListView.swift */; };
+		3906F6C62832593D00CA42DE /* PosterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6C52832593D00CA42DE /* PosterStyle.swift */; };
+		3906F6C828325A6D00CA42DE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3906F6C728325A6D00CA42DE /* Color.xcassets */; };
+		3906F6CE28325D4400CA42DE /* Font++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6CD28325D4400CA42DE /* Font++.swift */; };
 		391DEDD4282E365200282BAB /* PointRandomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD1282E365200282BAB /* PointRandomization.swift */; };
 		391DEDD5282E365200282BAB /* ColorfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD2282E365200282BAB /* ColorfulView.swift */; };
 		391DEDD6282E365200282BAB /* Colorful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD3282E365200282BAB /* Colorful.swift */; };
@@ -42,6 +47,14 @@
 		3906F6492831FD9F00CA42DE /* SearchTextObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextObservable.swift; sourceTree = "<group>"; };
 		3906F64C2831FE0000CA42DE /* OffsetTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetTop.swift; sourceTree = "<group>"; };
 		3906F64F2831FEB400CA42DE /* PopularityBagde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularityBagde.swift; sourceTree = "<group>"; };
+		3906F674283236EE00CA42DE /* MovieRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRows.swift; sourceTree = "<group>"; };
+		3906F6872832396300CA42DE /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		3906F6C52832593D00CA42DE /* PosterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStyle.swift; sourceTree = "<group>"; };
+		3906F6C728325A6D00CA42DE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		3906F6CA28325C3D00CA42DE /* FHACondFrenchNC.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FHACondFrenchNC.otf; path = "../../../../../../Downloads/MovieSwiftUI-master/MovieSwift/Shared/fonts/FHACondFrenchNC.otf"; sourceTree = "<group>"; };
+		3906F6CB28325C3D00CA42DE /* American Captain.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "American Captain.otf"; path = "../../../../../../Downloads/MovieSwiftUI-master/MovieSwift/Shared/fonts/American Captain.otf"; sourceTree = "<group>"; };
+		3906F6CC28325C3D00CA42DE /* FjallaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FjallaOne-Regular.ttf"; path = "../../../../../../Downloads/MovieSwiftUI-master/MovieSwift/Shared/fonts/FjallaOne-Regular.ttf"; sourceTree = "<group>"; };
+		3906F6CD28325D4400CA42DE /* Font++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font++.swift"; sourceTree = "<group>"; };
 		391DEDD1282E365200282BAB /* PointRandomization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointRandomization.swift; sourceTree = "<group>"; };
 		391DEDD2282E365200282BAB /* ColorfulView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorfulView.swift; sourceTree = "<group>"; };
 		391DEDD3282E365200282BAB /* Colorful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colorful.swift; sourceTree = "<group>"; };
@@ -107,9 +120,30 @@
 			path = PopularityBagde;
 			sourceTree = "<group>";
 		};
+		3906F673283236E100CA42DE /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				3906F674283236EE00CA42DE /* MovieRows.swift */,
+				3906F6872832396300CA42DE /* MovieListView.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		3906F6C928325C2300CA42DE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3906F6CB28325C3D00CA42DE /* American Captain.otf */,
+				3906F6CA28325C3D00CA42DE /* FHACondFrenchNC.otf */,
+				3906F6CC28325C3D00CA42DE /* FjallaOne-Regular.ttf */,
+				3906F6CD28325D4400CA42DE /* Font++.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		391DEDCE282E361A00282BAB /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				3906F673283236E100CA42DE /* MovieList */,
 				3906F64E2831FEA500CA42DE /* PopularityBagde */,
 				3906F64B2831FDEF00CA42DE /* PreferenceKey */,
 				3906F6462831FD5800CA42DE /* SearchField */,
@@ -158,6 +192,7 @@
 		78EAE2D4282A572900610735 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3906F6C928325C2300CA42DE /* Fonts */,
 				391DEDCE282E361A00282BAB /* CustomView */,
 				78EAE320282A5BC600610735 /* Extensions */,
 				78EAE2DE282A581000610735 /* Assets */,
@@ -168,6 +203,7 @@
 				78EAE2EB282A581000610735 /* Images.swift */,
 				78EAE2DD282A581000610735 /* Strings.swift */,
 				78EAE2D5282A572900610735 /* Resources.h */,
+				3906F6C52832593D00CA42DE /* PosterStyle.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -178,6 +214,7 @@
 				78EAE2DF282A581000610735 /* Localizable.strings */,
 				78EAE2E2282A581000610735 /* MotionPicture.ttf */,
 				78EAE2E3282A581000610735 /* Images.xcassets */,
+				3906F6C728325A6D00CA42DE /* Color.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -296,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78EAE2F0282A581000610735 /* Images.xcassets in Resources */,
+				3906F6C828325A6D00CA42DE /* Color.xcassets in Resources */,
 				78EAE2EE282A581000610735 /* Localizable.strings in Resources */,
 				78EAE2EF282A581000610735 /* MotionPicture.ttf in Resources */,
 			);
@@ -338,8 +376,10 @@
 				3906F6482831FD7900CA42DE /* SearchField.swift in Sources */,
 				78EAE2ED282A581000610735 /* Strings.swift in Sources */,
 				78EAE2F1282A581000610735 /* FontProviding.swift in Sources */,
+				3906F6882832396300CA42DE /* MovieListView.swift in Sources */,
 				391DEDD4282E365200282BAB /* PointRandomization.swift in Sources */,
 				78EAE2F7282A581000610735 /* Images.swift in Sources */,
+				3906F6CE28325D4400CA42DE /* Font++.swift in Sources */,
 				78EAE326282A5BC600610735 /* UIColor++.swift in Sources */,
 				78EAE2F3282A581000610735 /* ColorProviding.swift in Sources */,
 				3906F64A2831FD9F00CA42DE /* SearchTextObservable.swift in Sources */,
@@ -348,9 +388,11 @@
 				78EAE324282A5BC600610735 /* UIImage++.swift in Sources */,
 				391DEDE4282E3F4600282BAB /* GrowingButton.swift in Sources */,
 				3906F6502831FEB400CA42DE /* PopularityBagde.swift in Sources */,
+				3906F6C62832593D00CA42DE /* PosterStyle.swift in Sources */,
 				78EAE2F6282A581000610735 /* ResourcesBundle.swift in Sources */,
 				78EAE32A282A5C8500610735 /* Color++.swift in Sources */,
 				391DEDD6282E365200282BAB /* Colorful.swift in Sources */,
+				3906F675283236EF00CA42DE /* MovieRows.swift in Sources */,
 				78EAE329282A5C8500610735 /* Image++.swift in Sources */,
 				391DEDD5282E365200282BAB /* ColorfulView.swift in Sources */,
 				78EAE2EC282A581000610735 /* Colors.swift in Sources */,
