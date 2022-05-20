@@ -8,6 +8,8 @@
 import SwiftUI
 import Core
 import Resources
+import Common
+import SkeletonUI
 
 struct DashboardView: View {
     @Store public var viewModel: DashboardViewModel
@@ -17,27 +19,64 @@ struct DashboardView: View {
     }
     
     public var body: some View {
-        VStack {
-            Text("Dashboard Main view")
-            Text(CommonStrings.appName())
-            CommonImages.abc()
-            Button("Push test view") {
-                viewModel.steps.send(DashboardStep.testView)
+        ScrollView {
+            VStack(alignment: .leading) {
+                DashboardHeaderView(viewModel: viewModel)
+                
+                AppText(.title, "Now Playing")
+
+                MoviesHorizontalListView(movies: viewModel.nowPlayingList) { movie in
+                    viewModel.steps.send(DashboardStep.movieDetail(movie))
+                }
+                .background(R.image.night_sky.image.resizable())
+                    
+                AppText(.title, "Popular")
+
+                MoviesHorizontalListView(movies: viewModel.popularList) { movie in
+                    viewModel.steps.send(DashboardStep.movieDetail(movie))
+                }.background(R.image.night_sky.image.resizable())
+                
+                
+                AppText(.title, "Top Rated")
+
+                MoviesHorizontalListView(movies: viewModel.topRatedList) { movie in
+                    viewModel.steps.send(DashboardStep.movieDetail(movie))
+                }.background(R.image.night_sky.image.resizable())
+                
+
+                AppText(.title, "Upcoming")
+
+                MoviesHorizontalListView(movies: viewModel.upcomingList) { movie in
+                    viewModel.steps.send(DashboardStep.movieDetail(movie))
+                }.background(R.image.night_sky.image.resizable())
             }
-            Button("Show test view") {
-                viewModel.steps.send(DashboardStep.testViewWithoutViewModel)
-            }
-            Button("Go to tab 2") {
-                viewModel.steps.send(DashboardStep.switchTab(2))
-            }
+            .matchParent()
+        }.onAppear {
+            viewModel.chainingFetch()
         }
-        .matchParent()
-        .overlay(
-            Button("Logout") {
-                viewModel.logout()
-            }.padding(),
-            alignment: .topTrailing
-        )
+    }
+}
+
+struct DashboardHeaderView: View {
+    @Store public var viewModel: DashboardViewModel
+    
+    public init(viewModel: DashboardViewModel) {
+        _viewModel = Store(wrappedValue: viewModel)
+    }
+    
+    var body: some View {
+            AppText(.appTitle, "TMDB")
+                .frame(maxWidth: .infinity)
+                .overlay(
+                    FilledButton(buttonType: .small, "Logout") {
+                        viewModel.emptyList()
+                        viewModel.chainingFetch()
+                    }
+                    .padding(),
+                    alignment: .trailing
+                ).background(ColorfulView()
+                                .padding(.bottom, 25))
+        
     }
 }
 

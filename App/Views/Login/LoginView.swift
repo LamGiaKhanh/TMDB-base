@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 import Core
 import Resources
+import Domain
+import Common
 
 struct LoginView: View {
     @Store var viewModel: LoginViewModel
@@ -53,12 +55,13 @@ struct LoginView: View {
                 }) {
                     Text("SIGN IN")
                         .font(.system(size: 18))
+                        .bold()
                         .padding()
                         .foregroundColor(.white)
                 }
                 .buttonStyle(GrowingButton())
                 .frame(maxWidth: .infinity)
-                .background(Color.yellow) // If you have this
+                .background(R.color.steam_gold.color) // If you have this
                 .cornerRadius(25)
             }.padding()
         }

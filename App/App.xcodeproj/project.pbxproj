@@ -32,6 +32,9 @@
 		391DEDBD282E2FD700282BAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDBC282E2FD700282BAB /* ContentView.swift */; };
 		391DEDBF282E321300282BAB /* LoginNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDBE282E321300282BAB /* LoginNavigatorView.swift */; };
 		391DEE25282E574700282BAB /* SearchMovie.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 391DEE24282E542D00282BAB /* SearchMovie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		395BC34F2833A15D00EFEB7B /* MovieDetail.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 395BC34C2833A15800EFEB7B /* MovieDetail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39692C432836024100978F94 /* PreviewMocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39692C422836024100978F94 /* PreviewMocked.swift */; };
+		398BC6B92834D55200A28ED3 /* Common.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 398BC6922834D4EF00A28ED3 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B54CA26939075892DE65217A /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16361D954F76E664C64A3FE5 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +95,20 @@
 			remoteGlobalIDString = 3937E9B6282E098B005954E5;
 			remoteInfo = App;
 		};
+		395BC34B2833A15800EFEB7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395BC3432833A15800EFEB7B /* MovieDetail.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 395BC3242833A0A500EFEB7B;
+			remoteInfo = MovieDetail;
+		};
+		398BC6912834D4EF00A28ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398BC68D2834D4EF00A28ED3 /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 398BC67A2834D47A00A28ED3;
+			remoteInfo = Common;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +124,8 @@
 				391DED00282E0DAE00282BAB /* Data.framework in Copy Frameworks */,
 				391DED01282E0DB400282BAB /* Domain.framework in Copy Frameworks */,
 				391DED8F282E12DF00282BAB /* DashboardTab.framework in Copy Frameworks */,
+				395BC34F2833A15D00EFEB7B /* MovieDetail.framework in Copy Frameworks */,
+				398BC6B92834D55200A28ED3 /* Common.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +164,9 @@
 		3937E9B7282E098B005954E5 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3937E9C7282E098E005954E5 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3937E9D1282E098E005954E5 /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		395BC3432833A15800EFEB7B /* MovieDetail.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieDetail.xcodeproj; path = ../MovieDetail/MovieDetail.xcodeproj; sourceTree = "<group>"; };
+		39692C422836024100978F94 /* PreviewMocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocked.swift; sourceTree = "<group>"; };
+		398BC68D2834D4EF00A28ED3 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = ../Common/Common.xcodeproj; sourceTree = "<group>"; };
 		4A38B84EDFC78CBC11351115 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 		D1229ADFA88D1E0124058F91 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -270,6 +292,7 @@
 		391DED1E282E0EF500282BAB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				39692C392836023500978F94 /* Preview */,
 				391DEDB3282E2D0A00282BAB /* Login */,
 				391DEDAC282E18C000282BAB /* Home */,
 				391DED1F282E0F1400282BAB /* Splash */,
@@ -350,11 +373,37 @@
 				391DECD6282E0BC500282BAB /* Core.xcodeproj */,
 				391DECED282E0D9C00282BAB /* Data.xcodeproj */,
 				391DECF4282E0DA100282BAB /* Domain.xcodeproj */,
+				398BC68D2834D4EF00A28ED3 /* Common.xcodeproj */,
 				391DECFA282E0DA600282BAB /* Resources.xcodeproj */,
 				391DED85282E12BD00282BAB /* DashboardTab.xcodeproj */,
 				391DEE1A282E542D00282BAB /* SearchMovie.xcodeproj */,
+				395BC3432833A15800EFEB7B /* MovieDetail.xcodeproj */,
 			);
 			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		395BC3442833A15800EFEB7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				395BC34C2833A15800EFEB7B /* MovieDetail.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39692C392836023500978F94 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				39692C422836024100978F94 /* PreviewMocked.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		398BC68E2834D4EF00A28ED3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				398BC6922834D4EF00A28ED3 /* Common.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F5EDD2A57D0403669B24A770 /* Pods */ = {
@@ -463,6 +512,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 398BC68E2834D4EF00A28ED3 /* Products */;
+					ProjectRef = 398BC68D2834D4EF00A28ED3 /* Common.xcodeproj */;
+				},
+				{
 					ProductGroup = 391DECD7282E0BC500282BAB /* Products */;
 					ProjectRef = 391DECD6282E0BC500282BAB /* Core.xcodeproj */;
 				},
@@ -477,6 +530,10 @@
 				{
 					ProductGroup = 391DECF5282E0DA100282BAB /* Products */;
 					ProjectRef = 391DECF4282E0DA100282BAB /* Domain.xcodeproj */;
+				},
+				{
+					ProductGroup = 395BC3442833A15800EFEB7B /* Products */;
+					ProjectRef = 395BC3432833A15800EFEB7B /* MovieDetail.xcodeproj */;
 				},
 				{
 					ProductGroup = 391DECFB282E0DA600282BAB /* Products */;
@@ -537,6 +594,20 @@
 			fileType = wrapper.framework;
 			path = SearchMovie.framework;
 			remoteRef = 391DEE23282E542D00282BAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		395BC34C2833A15800EFEB7B /* MovieDetail.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MovieDetail.framework;
+			remoteRef = 395BC34B2833A15800EFEB7B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		398BC6922834D4EF00A28ED3 /* Common.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Common.framework;
+			remoteRef = 398BC6912834D4EF00A28ED3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -619,6 +690,7 @@
 				391DED23282E0F2900282BAB /* SplashView.swift in Sources */,
 				391DED16282E0EAA00282BAB /* ScenesAssembly.swift in Sources */,
 				391DEDB5282E2D4700282BAB /* LoginViewModel.swift in Sources */,
+				39692C432836024100978F94 /* PreviewMocked.swift in Sources */,
 				391DED18282E0EAA00282BAB /* DIInitializer.swift in Sources */,
 				391DED27282E10B000282BAB /* HomeNavigator.swift in Sources */,
 				391DED25282E105E00282BAB /* TMDBApp.swift in Sources */,
@@ -787,6 +859,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3U55QZ72L6;
@@ -797,13 +870,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kayg.App;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kayg.IMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Application/App-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -819,6 +894,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3U55QZ72L6;
@@ -829,13 +905,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kayg.App;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kayg.IMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Application/App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

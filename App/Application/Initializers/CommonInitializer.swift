@@ -8,9 +8,11 @@
 import Foundation
 import Core
 import Resources
+import IQKeyboardManagerSwift
 
 class CommonInitializer: Initializable {
     func performInitialization() {
         registerCommonFonts()
+        IQKeyboardManager.shared.enable = true
     }
 }

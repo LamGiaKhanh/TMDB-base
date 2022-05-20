@@ -8,19 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2492F48BAC4176A8D50D3E59 /* Pods_Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C23DA9B1CEE8F8DD243375 /* Pods_Resources.framework */; };
-		3906F6482831FD7900CA42DE /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6472831FD7900CA42DE /* SearchField.swift */; };
-		3906F64A2831FD9F00CA42DE /* SearchTextObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6492831FD9F00CA42DE /* SearchTextObservable.swift */; };
-		3906F64D2831FE0000CA42DE /* OffsetTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F64C2831FE0000CA42DE /* OffsetTop.swift */; };
-		3906F6502831FEB400CA42DE /* PopularityBagde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F64F2831FEB400CA42DE /* PopularityBagde.swift */; };
-		3906F675283236EF00CA42DE /* MovieRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F674283236EE00CA42DE /* MovieRows.swift */; };
-		3906F6882832396300CA42DE /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6872832396300CA42DE /* MovieListView.swift */; };
 		3906F6C62832593D00CA42DE /* PosterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6C52832593D00CA42DE /* PosterStyle.swift */; };
 		3906F6C828325A6D00CA42DE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3906F6C728325A6D00CA42DE /* Color.xcassets */; };
 		3906F6CE28325D4400CA42DE /* Font++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906F6CD28325D4400CA42DE /* Font++.swift */; };
-		391DEDD4282E365200282BAB /* PointRandomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD1282E365200282BAB /* PointRandomization.swift */; };
-		391DEDD5282E365200282BAB /* ColorfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD2282E365200282BAB /* ColorfulView.swift */; };
-		391DEDD6282E365200282BAB /* Colorful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDD3282E365200282BAB /* Colorful.swift */; };
-		391DEDE4282E3F4600282BAB /* GrowingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDE3282E3F4600282BAB /* GrowingButton.swift */; };
+		395BC2FE2833989100EFEB7B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395BC2FD2833989000EFEB7B /* R.generated.swift */; };
+		39C9CDA128334B5B00DFBDA9 /* R.swift++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9CDA028334B5B00DFBDA9 /* R.swift++.swift */; };
+		39CF50C128335A4000109B8B /* FjallaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39C9CDA32833500C00DFBDA9 /* FjallaOne-Regular.ttf */; };
+		39CF50C228335A4200109B8B /* FHACondFrenchNC.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39C9CDA42833500C00DFBDA9 /* FHACondFrenchNC.otf */; };
+		39CF50C328335A4500109B8B /* American Captain.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39C9CDA22833500C00DFBDA9 /* American Captain.otf */; };
 		78EAE2D6282A572900610735 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 78EAE2D5282A572900610735 /* Resources.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78EAE2EC282A581000610735 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EAE2DC282A581000610735 /* Colors.swift */; };
 		78EAE2ED282A581000610735 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EAE2DD282A581000610735 /* Strings.swift */; };
@@ -41,24 +36,29 @@
 		78EAE32A282A5C8500610735 /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EAE328282A5C8500610735 /* Color++.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		39CF50D1283377E500109B8B /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		298C87B85182F0B6CF2307F6 /* Pods-Resources.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resources.release.xcconfig"; path = "Target Support Files/Pods-Resources/Pods-Resources.release.xcconfig"; sourceTree = "<group>"; };
-		3906F6472831FD7900CA42DE /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
-		3906F6492831FD9F00CA42DE /* SearchTextObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextObservable.swift; sourceTree = "<group>"; };
-		3906F64C2831FE0000CA42DE /* OffsetTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetTop.swift; sourceTree = "<group>"; };
-		3906F64F2831FEB400CA42DE /* PopularityBagde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularityBagde.swift; sourceTree = "<group>"; };
-		3906F674283236EE00CA42DE /* MovieRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRows.swift; sourceTree = "<group>"; };
-		3906F6872832396300CA42DE /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		3906F6C52832593D00CA42DE /* PosterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStyle.swift; sourceTree = "<group>"; };
 		3906F6C728325A6D00CA42DE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
-		3906F6CA28325C3D00CA42DE /* FHACondFrenchNC.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FHACondFrenchNC.otf; path = "../../../../../../Downloads/MovieSwiftUI-master/MovieSwift/Shared/fonts/FHACondFrenchNC.otf"; sourceTree = "<group>"; };
-		3906F6CB28325C3D00CA42DE /* American Captain.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "American Captain.otf"; path = "../../../../../../Downloads/MovieSwiftUI-master/MovieSwift/Shared/fonts/American Captain.otf"; sourceTree = "<group>"; };
-		3906F6CC28325C3D00CA42DE /* FjallaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FjallaOne-Regular.ttf"; path = "../../../../../../Downloads/MovieSwiftUI-master/MovieSwift/Shared/fonts/FjallaOne-Regular.ttf"; sourceTree = "<group>"; };
 		3906F6CD28325D4400CA42DE /* Font++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font++.swift"; sourceTree = "<group>"; };
-		391DEDD1282E365200282BAB /* PointRandomization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointRandomization.swift; sourceTree = "<group>"; };
-		391DEDD2282E365200282BAB /* ColorfulView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorfulView.swift; sourceTree = "<group>"; };
-		391DEDD3282E365200282BAB /* Colorful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colorful.swift; sourceTree = "<group>"; };
-		391DEDE3282E3F4600282BAB /* GrowingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingButton.swift; sourceTree = "<group>"; };
+		395BC2FD2833989000EFEB7B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		39C9CDA028334B5B00DFBDA9 /* R.swift++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R.swift++.swift"; sourceTree = "<group>"; };
+		39C9CDA22833500C00DFBDA9 /* American Captain.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "American Captain.otf"; sourceTree = "<group>"; };
+		39C9CDA32833500C00DFBDA9 /* FjallaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FjallaOne-Regular.ttf"; sourceTree = "<group>"; };
+		39C9CDA42833500C00DFBDA9 /* FHACondFrenchNC.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FHACondFrenchNC.otf; sourceTree = "<group>"; };
 		6D7FC36068F1B5EA1E0EB414 /* Pods-Resources.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resources.debug.xcconfig"; path = "Target Support Files/Pods-Resources/Pods-Resources.debug.xcconfig"; sourceTree = "<group>"; };
 		78EAE2D2282A572900610735 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EAE2D5282A572900610735 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
@@ -95,85 +95,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3906F6462831FD5800CA42DE /* SearchField */ = {
-			isa = PBXGroup;
-			children = (
-				3906F6472831FD7900CA42DE /* SearchField.swift */,
-				3906F6492831FD9F00CA42DE /* SearchTextObservable.swift */,
-			);
-			path = SearchField;
-			sourceTree = "<group>";
-		};
-		3906F64B2831FDEF00CA42DE /* PreferenceKey */ = {
-			isa = PBXGroup;
-			children = (
-				3906F64C2831FE0000CA42DE /* OffsetTop.swift */,
-			);
-			path = PreferenceKey;
-			sourceTree = "<group>";
-		};
-		3906F64E2831FEA500CA42DE /* PopularityBagde */ = {
-			isa = PBXGroup;
-			children = (
-				3906F64F2831FEB400CA42DE /* PopularityBagde.swift */,
-			);
-			path = PopularityBagde;
-			sourceTree = "<group>";
-		};
-		3906F673283236E100CA42DE /* MovieList */ = {
-			isa = PBXGroup;
-			children = (
-				3906F674283236EE00CA42DE /* MovieRows.swift */,
-				3906F6872832396300CA42DE /* MovieListView.swift */,
-			);
-			path = MovieList;
-			sourceTree = "<group>";
-		};
-		3906F6C928325C2300CA42DE /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				3906F6CB28325C3D00CA42DE /* American Captain.otf */,
-				3906F6CA28325C3D00CA42DE /* FHACondFrenchNC.otf */,
-				3906F6CC28325C3D00CA42DE /* FjallaOne-Regular.ttf */,
-				3906F6CD28325D4400CA42DE /* Font++.swift */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		391DEDCE282E361A00282BAB /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				3906F673283236E100CA42DE /* MovieList */,
-				3906F64E2831FEA500CA42DE /* PopularityBagde */,
-				3906F64B2831FDEF00CA42DE /* PreferenceKey */,
-				3906F6462831FD5800CA42DE /* SearchField */,
-				391DEDE2282E3F3700282BAB /* GrowingButton */,
-				391DEDD0282E365200282BAB /* ColorfulView */,
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
-		391DEDD0282E365200282BAB /* ColorfulView */ = {
-			isa = PBXGroup;
-			children = (
-				391DEDD1282E365200282BAB /* PointRandomization.swift */,
-				391DEDD2282E365200282BAB /* ColorfulView.swift */,
-				391DEDD3282E365200282BAB /* Colorful.swift */,
-			);
-			path = ColorfulView;
-			sourceTree = "<group>";
-		};
-		391DEDE2282E3F3700282BAB /* GrowingButton */ = {
-			isa = PBXGroup;
-			children = (
-				391DEDE3282E3F4600282BAB /* GrowingButton.swift */,
-			);
-			path = GrowingButton;
-			sourceTree = "<group>";
-		};
 		78EAE2C8282A572900610735 = {
 			isa = PBXGroup;
 			children = (
+				395BC2FD2833989000EFEB7B /* R.generated.swift */,
 				78EAE2D4282A572900610735 /* Resources */,
 				78EAE2D3282A572900610735 /* Products */,
 				FC587BA3191AE616DA17364D /* Pods */,
@@ -192,8 +117,6 @@
 		78EAE2D4282A572900610735 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3906F6C928325C2300CA42DE /* Fonts */,
-				391DEDCE282E361A00282BAB /* CustomView */,
 				78EAE320282A5BC600610735 /* Extensions */,
 				78EAE2DE282A581000610735 /* Assets */,
 				78EAE2E4282A581000610735 /* Protocols */,
@@ -213,6 +136,9 @@
 			children = (
 				78EAE2DF282A581000610735 /* Localizable.strings */,
 				78EAE2E2282A581000610735 /* MotionPicture.ttf */,
+				39C9CDA22833500C00DFBDA9 /* American Captain.otf */,
+				39C9CDA42833500C00DFBDA9 /* FHACondFrenchNC.otf */,
+				39C9CDA32833500C00DFBDA9 /* FjallaOne-Regular.ttf */,
 				78EAE2E3282A581000610735 /* Images.xcassets */,
 				3906F6C728325A6D00CA42DE /* Color.xcassets */,
 			);
@@ -233,11 +159,13 @@
 		78EAE320282A5BC600610735 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3906F6CD28325D4400CA42DE /* Font++.swift */,
 				78EAE328282A5C8500610735 /* Color++.swift */,
 				78EAE327282A5C8500610735 /* Image++.swift */,
 				78EAE321282A5BC600610735 /* UIImage++.swift */,
 				78EAE322282A5BC600610735 /* UIFont++.swift */,
 				78EAE323282A5BC600610735 /* UIColor++.swift */,
+				39C9CDA028334B5B00DFBDA9 /* R.swift++.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,10 +207,12 @@
 			buildConfigurationList = 78EAE2D9282A572900610735 /* Build configuration list for PBXNativeTarget "Resources" */;
 			buildPhases = (
 				2FFB8A1CB7153871F3EC438F /* [CP] Check Pods Manifest.lock */,
+				39C9CD9C283349B700DFBDA9 /* R.swift.generate */,
 				78EAE2CD282A572900610735 /* Headers */,
 				78EAE2CE282A572900610735 /* Sources */,
 				78EAE2CF282A572900610735 /* Frameworks */,
 				78EAE2D0282A572900610735 /* Resources */,
+				39CF50D1283377E500109B8B /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,8 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CF50C128335A4000109B8B /* FjallaOne-Regular.ttf in Resources */,
 				78EAE2F0282A581000610735 /* Images.xcassets in Resources */,
+				39CF50C228335A4200109B8B /* FHACondFrenchNC.otf in Resources */,
 				3906F6C828325A6D00CA42DE /* Color.xcassets in Resources */,
+				39CF50C328335A4500109B8B /* American Captain.otf in Resources */,
 				78EAE2EE282A581000610735 /* Localizable.strings in Resources */,
 				78EAE2EF282A581000610735 /* MotionPicture.ttf in Resources */,
 			);
@@ -364,6 +297,27 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		39C9CD9C283349B700DFBDA9 /* R.swift.generate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift.generate;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate --accessLevel public \"$SRCROOT/R.generated.swift\"\\\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -373,30 +327,22 @@
 			files = (
 				78EAE2F5282A581000610735 /* Fonts.swift in Sources */,
 				78EAE2F2282A581000610735 /* ImageProviding.swift in Sources */,
-				3906F6482831FD7900CA42DE /* SearchField.swift in Sources */,
 				78EAE2ED282A581000610735 /* Strings.swift in Sources */,
 				78EAE2F1282A581000610735 /* FontProviding.swift in Sources */,
-				3906F6882832396300CA42DE /* MovieListView.swift in Sources */,
-				391DEDD4282E365200282BAB /* PointRandomization.swift in Sources */,
 				78EAE2F7282A581000610735 /* Images.swift in Sources */,
 				3906F6CE28325D4400CA42DE /* Font++.swift in Sources */,
 				78EAE326282A5BC600610735 /* UIColor++.swift in Sources */,
 				78EAE2F3282A581000610735 /* ColorProviding.swift in Sources */,
-				3906F64A2831FD9F00CA42DE /* SearchTextObservable.swift in Sources */,
 				78EAE2F4282A581000610735 /* Localizable.swift in Sources */,
 				78EAE325282A5BC600610735 /* UIFont++.swift in Sources */,
 				78EAE324282A5BC600610735 /* UIImage++.swift in Sources */,
-				391DEDE4282E3F4600282BAB /* GrowingButton.swift in Sources */,
-				3906F6502831FEB400CA42DE /* PopularityBagde.swift in Sources */,
+				395BC2FE2833989100EFEB7B /* R.generated.swift in Sources */,
 				3906F6C62832593D00CA42DE /* PosterStyle.swift in Sources */,
 				78EAE2F6282A581000610735 /* ResourcesBundle.swift in Sources */,
 				78EAE32A282A5C8500610735 /* Color++.swift in Sources */,
-				391DEDD6282E365200282BAB /* Colorful.swift in Sources */,
-				3906F675283236EF00CA42DE /* MovieRows.swift in Sources */,
+				39C9CDA128334B5B00DFBDA9 /* R.swift++.swift in Sources */,
 				78EAE329282A5C8500610735 /* Image++.swift in Sources */,
-				391DEDD5282E365200282BAB /* ColorfulView.swift in Sources */,
 				78EAE2EC282A581000610735 /* Colors.swift in Sources */,
-				3906F64D2831FE0000CA42DE /* OffsetTop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +495,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -580,6 +527,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

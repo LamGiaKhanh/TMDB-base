@@ -37,17 +37,18 @@ public struct Dates: Codable {
 
 // MARK: - Result
 public struct Movie: Codable, Identifiable {
-    public let adult: Bool
-    public let backdropPath: String
-    public let genreIDS: [Int]
-    public let id: Int
-    public let originalLanguage: String
-    public let originalTitle, overview: String
-    public let popularity: Double
-    public let posterPath, releaseDate, title: String
-    public let video: Bool
-    public let voteAverage: Double
-    public let voteCount: Int
+    
+    public var adult: Bool
+    public var backdropPath: String
+    public var genreIDS: [Int]
+    public var id: Int
+    public var originalLanguage: String
+    public var originalTitle, overview: String
+    public var popularity: Double
+    public var posterPath, releaseDate, title: String
+    public var video: Bool
+    public var voteAverage: Double
+    public var voteCount: Int
     
     enum CodingKeys: String, CodingKey {
         case adult
@@ -81,6 +82,23 @@ public struct Movie: Codable, Identifiable {
         video = try values.decodeIfPresent(Bool.self, forKey: .video) ?? false
         voteAverage = try values.decodeIfPresent(Double.self, forKey: .voteAverage) ?? 0
         voteCount = try values.decodeIfPresent(Int.self, forKey: .voteCount) ?? 0
+    }
+    
+    public init(adult: Bool = false, backdropPath: String = "https://i.pinimg.com/originals/89/5d/24/895d2482fd516e809023ef09d599769f.jpg", genreIDS: [Int] = [], id: Int = 0, originalLanguage: String = "Vietnamese", originalTitle: String = "Mocked movie", overview: String = "bla bla", popularity: Double = Double(Int.random(in: 1..<10)), posterPath: String = "https://i.pinimg.com/originals/89/5d/24/895d2482fd516e809023ef09d599769f.jpg", releaseDate: String = "", title: String = "", video: Bool = false, voteAverage: Double = 0, voteCount: Int = 1000) {
+        self.adult = adult
+        self.backdropPath = backdropPath
+        self.genreIDS = genreIDS
+        self.id = id
+        self.originalLanguage = originalLanguage
+        self.originalTitle = originalTitle
+        self.overview = overview
+        self.popularity = popularity
+        self.posterPath = posterPath
+        self.releaseDate = releaseDate
+        self.title = title
+        self.video = video
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
     }
 }
 

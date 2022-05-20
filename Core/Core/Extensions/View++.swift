@@ -86,6 +86,17 @@ public extension View {
 
 // MARK: Others
 public extension View {
+    
+    func readSize(onChange: @escaping (CGSize) -> Void) -> some View {
+        background(
+            GeometryReader { geometryProxy in
+                Color.clear
+                    .preference(key: SizePreferenceKey.self, value: geometryProxy.size)
+            }
+        )
+            .onPreferenceChange(SizePreferenceKey.self, perform: onChange)
+    }
+    
     func hideNavigationBar(_ isHidden: Bool = true, withBackButton: Bool = true) -> some View {
         navigationBarTitle("") // this must be empty
             .navigationBarHidden(isHidden)
@@ -113,5 +124,36 @@ public extension View {
             minHeight: 0,
             maxHeight: .infinity
         )
+    }
+}
+
+// MARK: Hide Keyboard
+
+private struct SizePreferenceKey: PreferenceKey {
+    static var defaultValue: CGSize = .zero
+    static func reduce(value: inout CGSize, nextValue: () -> CGSize) {}
+}
+
+extension UIApplication {
+    func endEditing(_ force: Bool) {
+        self.windows
+            .filter{$0.isKeyWindow}
+            .first?
+            .endEditing(force)
+    }
+}
+
+struct ResignKeyboardOnDragGesture: ViewModifier {
+    var gesture = DragGesture().onChanged{_ in
+        UIApplication.shared.endEditing(true)
+    }
+    func body(content: Content) -> some View {
+        content.gesture(gesture)
+    }
+}
+
+extension View {
+    public func resignKeyboardOnDragGesture() -> some View {
+        return modifier(ResignKeyboardOnDragGesture())
     }
 }

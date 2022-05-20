@@ -23,6 +23,7 @@ private extension ContentNavigatorView {
         switch navigator.viewType {
         case .home:
             HomeNavigatorView(navigator: navigator.homeNavigator)
+                .background(Color.black.edgesIgnoringSafeArea(.all))
         case .login:
             LoginNavigatorView(navigator: navigator.loginNavigator)
         case .splash:

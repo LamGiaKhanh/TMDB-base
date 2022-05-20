@@ -7,12 +7,15 @@
 
 import Combine
 import Core
+import Domain
+import MovieDetail
 
 public protocol DashboardNavigator: NavigatorModel, Stepper {
     var dashboardViewModel: DashboardViewModel { get set }
     
     var isShowTestViewWithoutViewModel: Bool { get set }
     var testViewModel: TestViewModel! { get set }
+    var movieDetailViewModel: MovieDetailViewModel! { get set }
 }
 
 public enum DashboardStep: Step {
@@ -20,6 +23,7 @@ public enum DashboardStep: Step {
     case testViewWithoutViewModel
     case logout
     case switchTab(Int)
+    case movieDetail(Movie)
 }
 
 public class DashboardNavigatorImpl: DashboardNavigator, ObservableObject, Resolving {
@@ -28,6 +32,8 @@ public class DashboardNavigatorImpl: DashboardNavigator, ObservableObject, Resol
     public var steps = PassthroughSubject<Step, Never>()
     
     @Published public var testViewModel: TestViewModel!
+    @Published public var movieDetailViewModel: MovieDetailViewModel!
+    
     @Published public var isShowTestViewWithoutViewModel: Bool = false
 
     public init() {
@@ -44,6 +50,8 @@ public class DashboardNavigatorImpl: DashboardNavigator, ObservableObject, Resol
             isShowTestViewWithoutViewModel = true
         case .switchTab, .logout:
             steps.send(step)
+        case .movieDetail(let movie):
+            movieDetailViewModel = resolve(MovieDetailViewModel.self, argument: movie)
         }
     }
 }

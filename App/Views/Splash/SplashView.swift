@@ -8,6 +8,7 @@
 import SwiftUI
 import Core
 import Resources
+import Common
 
 struct SplashView: View {
     @Store var viewModel: SplashViewModel

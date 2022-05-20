@@ -30,11 +30,27 @@ target 'Data' do
   data_pods
 end
 
+
 # Domain
 target 'Domain' do
   project 'Domain/Domain.xcproject'
-
   core_pods
+end
+
+# Resources
+def resources_pods
+  pod 'SDWebImageSwiftUI'
+  pod 'R.swift'
+  pod 'SkeletonUI'
+  pod 'WaterfallGrid', '~> 1.0.0'
+  pod 'IQKeyboardManagerSwift'
+end
+
+
+target 'Resources' do
+  project 'Resources/Resources.xcproject'
+
+  resources_pods
 end
 
 # DashboardTab
@@ -42,24 +58,29 @@ target 'DashboardTab' do
   project 'DashboardTab/DashboardTab.xcproject'
 
   core_pods
+  resources_pods
 end
 
 # SearchMovie
 target 'SearchMovie' do
   project 'SearchMovie/SearchMovie.xcproject'
-
+  resources_pods
   core_pods
 end
 
-# Resources
-def resources_pods
-  pod 'SDWebImageSwiftUI'
+# MovieDetail
+target 'MovieDetail' do
+  project 'MovieDetail/MovieDetail.xcproject'
+  resources_pods
+  core_pods
 end
 
-target 'Resources' do
-  project 'Resources/Resources.xcproject'
+# Common
+target 'Common' do
+  project 'Common/Common.xcproject'
   resources_pods
 end
+
 
 # App
 target 'App' do
