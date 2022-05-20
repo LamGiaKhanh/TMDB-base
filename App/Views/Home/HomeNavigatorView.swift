@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Core
+import Resources
 import DashboardTab
 import SearchMovie
 
@@ -19,7 +20,8 @@ struct HomeNavigatorView: View {
                 .modifier(TabItem(.home))
             SearchMovieNavigatorView(navigator: navigator.searchNavigator)
                 .modifier(TabItem(.search))
-        }
+        }.accentColor(R.color.steam_gold.color)
+
     }
 }
 
@@ -35,6 +37,16 @@ enum MainTab: Hashable {
             return "Search"
         }
     }
+    
+    var image: Image {
+        switch self {
+        case .home:
+            return R.image.ic_rehearsal.image
+        case .search:
+            return R.image.icon_search1.image
+        }
+    }
+  
 }
 
 struct TabItem: ViewModifier {
@@ -49,6 +61,7 @@ struct TabItem: ViewModifier {
             .tabItem {
                 VStack(alignment: .center) {
                     Text(item.name)
+                    item.image.renderingMode(.template)
                 }
             }
             .tag(item)

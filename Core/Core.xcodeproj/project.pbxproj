@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39692C6228364DDD00978F94 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39692C6128364DDD00978F94 /* ResultState.swift */; };
+		39F8059528376B500028986C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8059428376B500028986C /* BaseViewModel.swift */; };
 		78EAE224282A4D9B00610735 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 78EAE223282A4D9B00610735 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78EAE272282A4EAC00610735 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EAE238282A4EAB00610735 /* AppStorage.swift */; };
 		78EAE273282A4EAC00610735 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EAE239282A4EAB00610735 /* AppConstants.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		084C849E0AE9C059FC540CC2 /* Pods_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39692C6128364DDD00978F94 /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		39F8059428376B500028986C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		78EAE220282A4D9B00610735 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EAE223282A4D9B00610735 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		78EAE238282A4EAB00610735 /* AppStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		39F8059328376B410028986C /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39F8059428376B500028986C /* BaseViewModel.swift */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
 		5850F2EAB10A576739A74D96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 		78EAE222282A4D9B00610735 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				39F8059328376B410028986C /* BaseViewModel */,
 				78EAE23A282A4EAB00610735 /* Extensions */,
 				78EAE237282A4EAB00610735 /* Utils */,
 				78EAE245282A4EAB00610735 /* Views */,
@@ -141,6 +154,7 @@
 			children = (
 				78EAE238282A4EAB00610735 /* AppStorage.swift */,
 				78EAE239282A4EAB00610735 /* AppConstants.swift */,
+				39692C6128364DDD00978F94 /* ResultState.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -354,11 +368,13 @@
 				78EAE286282A4EAC00610735 /* Step.swift in Sources */,
 				78EAE272282A4EAC00610735 /* AppStorage.swift in Sources */,
 				78EAE27F282A4EAC00610735 /* ViewModel.swift in Sources */,
+				39692C6228364DDD00978F94 /* ResultState.swift in Sources */,
 				78EAE273282A4EAC00610735 /* AppConstants.swift in Sources */,
 				78EAE28E282A4EAC00610735 /* Environment.swift in Sources */,
 				78EAE28F282A4EAC00610735 /* EnvironmentProvider.swift in Sources */,
 				78EAE281282A4EAC00610735 /* Initializable.swift in Sources */,
 				78EAE28D282A4EAC00610735 /* ConfigurationAssembly.swift in Sources */,
+				39F8059528376B500028986C /* BaseViewModel.swift in Sources */,
 				78EAE293282A4EAC00610735 /* AnalyticsDto.swift in Sources */,
 				78EAE288282A4EAC00610735 /* Navigator.swift in Sources */,
 				78EAE290282A4EAC00610735 /* Analytics.swift in Sources */,

@@ -10,6 +10,9 @@
 		391DEE50282E590B00282BAB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEE4F282E590B00282BAB /* Movie.swift */; };
 		391DEE53282E59AE00282BAB /* SearchMovieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEE52282E59AE00282BAB /* SearchMovieUseCase.swift */; };
 		391DEE7E282E66D200282BAB /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEE7D282E66D200282BAB /* MovieService.swift */; };
+		395BC31828339F5C00EFEB7B /* MovieDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395BC31728339F5C00EFEB7B /* MovieDetailUseCase.swift */; };
+		398BC66C2834D2D400A28ED3 /* MovieRecommendationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398BC66B2834D2D400A28ED3 /* MovieRecommendationsUseCase.swift */; };
+		398BC66F2834D2EE00A28ED3 /* MovieCategoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398BC66E2834D2EE00A28ED3 /* MovieCategoryUseCase.swift */; };
 		6958C6701430A3D8E86C4170 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D8F077A2266F6A9E04A519 /* Pods_Domain.framework */; };
 		78A5F4B22824DEEB00E7A819 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A5F4B12824DEEB00E7A819 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78A5F4C62824DFA800E7A819 /* RefreshTokenUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5F4B92824DFA800E7A819 /* RefreshTokenUseCase.swift */; };
@@ -54,6 +57,9 @@
 		391DEE4F282E590B00282BAB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		391DEE52282E59AE00282BAB /* SearchMovieUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieUseCase.swift; sourceTree = "<group>"; };
 		391DEE7D282E66D200282BAB /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		395BC31728339F5C00EFEB7B /* MovieDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailUseCase.swift; sourceTree = "<group>"; };
+		398BC66B2834D2D400A28ED3 /* MovieRecommendationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRecommendationsUseCase.swift; sourceTree = "<group>"; };
+		398BC66E2834D2EE00A28ED3 /* MovieCategoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategoryUseCase.swift; sourceTree = "<group>"; };
 		78A5F4AE2824DEEB00E7A819 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A5F4B12824DEEB00E7A819 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		78A5F4B92824DFA800E7A819 /* RefreshTokenUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTokenUseCase.swift; sourceTree = "<group>"; };
@@ -140,6 +146,9 @@
 				78A5F4BB2824DFA800E7A819 /* AuthenticateUseCase.swift */,
 				78A5F4BC2824DFA800E7A819 /* UseCase.swift */,
 				391DEE52282E59AE00282BAB /* SearchMovieUseCase.swift */,
+				395BC31728339F5C00EFEB7B /* MovieDetailUseCase.swift */,
+				398BC66B2834D2D400A28ED3 /* MovieRecommendationsUseCase.swift */,
+				398BC66E2834D2EE00A28ED3 /* MovieCategoryUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -312,8 +321,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A5F4CD2824DFA800E7A819 /* KabuPlusService.swift in Sources */,
+				395BC31828339F5C00EFEB7B /* MovieDetailUseCase.swift in Sources */,
 				78A5F4CC2824DFA800E7A819 /* DomainAssembly.swift in Sources */,
 				78A5F4C62824DFA800E7A819 /* RefreshTokenUseCase.swift in Sources */,
+				398BC66C2834D2D400A28ED3 /* MovieRecommendationsUseCase.swift in Sources */,
 				78A5F4C92824DFA800E7A819 /* UseCase.swift in Sources */,
 				78A5F4CE2824DFA800E7A819 /* AmazonService.swift in Sources */,
 				78A5F4C82824DFA800E7A819 /* AuthenticateUseCase.swift in Sources */,
@@ -321,6 +332,7 @@
 				78A5F4CA2824DFA800E7A819 /* AWSAuthenFlowType.swift in Sources */,
 				78A5F4CB2824DFA800E7A819 /* SessionData.swift in Sources */,
 				78A5F4C72824DFA800E7A819 /* LogOutUseCase.swift in Sources */,
+				398BC66F2834D2EE00A28ED3 /* MovieCategoryUseCase.swift in Sources */,
 				391DEE50282E590B00282BAB /* Movie.swift in Sources */,
 				78A5F4CF2824DFA800E7A819 /* TokenService.swift in Sources */,
 				391DEE7E282E66D200282BAB /* MovieService.swift in Sources */,

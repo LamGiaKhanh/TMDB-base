@@ -11,6 +11,9 @@
       location = "group:Core/Core.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Common/Common.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Data/Data.xcodeproj">
    </FileRef>
    <FileRef
@@ -27,5 +30,8 @@
    </FileRef>
    <FileRef
       location = "group:SearchMovie/SearchMovie.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MovieDetail/MovieDetail.xcodeproj">
    </FileRef>
 </Workspace>

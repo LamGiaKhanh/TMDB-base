@@ -25,6 +25,6 @@ class SplashViewModelImpl: SplashViewModel, ObservableObject {
     }
 
     func checkLogin() {
-        steps.send(ContentStep.login)
+        steps.send(ContentStep.home)
     }
 }

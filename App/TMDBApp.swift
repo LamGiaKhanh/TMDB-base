@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Core
+import Resources
 
 @main
 struct TMDBApp: App, Resolving {
@@ -23,6 +24,10 @@ struct TMDBApp: App, Resolving {
     init() {
         initializers.forEach { $0.performInitialization() }
         _contentNavigator = Store(wrappedValue: ContentNavigatorImpl())
+        UITabBar.appearance().barTintColor = R.color.tab_color()!
+        UITabBar.appearance().tintColor = R.color.steam_bronze()!
+        UINavigationBar.appearance().tintColor = R.color.steam_gold()!
+        UITableView.appearance().backgroundColor = .clear
     }
 
     var body: some Scene {

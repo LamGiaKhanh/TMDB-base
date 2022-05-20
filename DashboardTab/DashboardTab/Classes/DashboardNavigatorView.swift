@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Core
+import Resources
+import MovieDetail
 
 public struct DashboardNavigatorView: View {
     @Store public var navigator: DashboardNavigator
@@ -17,15 +19,21 @@ public struct DashboardNavigatorView: View {
     
     public var body: some View {
         NavigationView {
-            DashboardView(viewModel: navigator.dashboardViewModel)
-                .hideNavigationBar()
-                .sheet(isPresented: $navigator.isShowTestViewWithoutViewModel) {
-                    TestViewWithoutViewModel()
-                }
-                .navigation(model: $navigator.testViewModel) {
-                    TestViewWithViewModel(viewModel: $0)
-                }
-
+            ZStack {
+                Color.black.edgesIgnoringSafeArea(.all)
+                DashboardView(viewModel: navigator.dashboardViewModel)
+                    .hideNavigationBar()
+                    .sheet(isPresented: $navigator.isShowTestViewWithoutViewModel) {
+                        TestViewWithoutViewModel()
+                    }
+                    .navigation(model: $navigator.testViewModel) {
+                        TestViewWithViewModel(viewModel: $0)
+                    }
+                    .navigation(model: $navigator.movieDetailViewModel) {
+                        MovieDetailView(viewModel: $0)
+                    }
+            }
+           
         }.navigationViewStyle(.stack)
     }
 }

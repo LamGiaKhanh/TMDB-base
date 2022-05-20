@@ -24,5 +24,17 @@ public class DomainAssembly: Assembly {
         container.register(SearchMovieUseCase.self) { _ in
             SearchMovieUseCase()
         }
+        
+        container.register(MovieDetailUseCase.self) { _ in
+            MovieDetailUseCase()
+        }
+        
+        container.register(MovieCategoryUseCase.self) { _ in
+            MovieCategoryUseCase()
+        }
+        
+        container.register(MovieRecommendationsUseCase.self) { _ in
+            MovieRecommendationsUseCase()
+        }
     }
 }

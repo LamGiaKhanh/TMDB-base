@@ -12,3 +12,9 @@ ${BUILT_PRODUCTS_DIR}/AmplifyPlugins/AmplifyPlugins.framework
 ${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
 ${BUILT_PRODUCTS_DIR}/TEQNetwork/TEQNetwork.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework
+${BUILT_PRODUCTS_DIR}/SkeletonUI/SkeletonUI.framework
+${BUILT_PRODUCTS_DIR}/WaterfallGrid/WaterfallGrid.framework
