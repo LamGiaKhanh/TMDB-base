@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 import Core
 import Resources
-import MovieDetail
 
 public struct SearchMovieNavigatorView: View {
     @Store public var navigator: SearchMovieNavigator
+    @EnvironmentObject var tabState: TabState
     
     public init(navigator: SearchMovieNavigator) {
         _navigator = Store(wrappedValue: navigator)
@@ -23,9 +23,11 @@ public struct SearchMovieNavigatorView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             NavigationView {
                 SearchMovieView(viewModel: navigator.searchMovieViewModel)
+                    .id(navigator.rootViewId)
                     .hideNavigationBar()
-                    .navigation(model: $navigator.movieDetailViewModel) {
-                        MovieDetailView(viewModel: $0)
+                    .navigation(model: $navigator.movieDetailNavigator) {
+                       MovieDetailNavigatorView(navigator: $0)
+                            .hideNavigationBar()
                     }
             }
         }

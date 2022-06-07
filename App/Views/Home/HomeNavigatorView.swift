@@ -10,18 +10,27 @@ import Core
 import Resources
 import DashboardTab
 import SearchMovie
+import Introspect
+import Combine
 
 struct HomeNavigatorView: View {
     @Store var navigator: HomeNavigator
+    @State public var tabState = TabState()
     
+    let appearance: UITabBarAppearance = UITabBarAppearance()
+
     var body: some View {
         TabView(selection: $navigator.tabSelected) {
             DashboardNavigatorView(navigator: navigator.dashboardNavigator)
                 .modifier(TabItem(.home))
             SearchMovieNavigatorView(navigator: navigator.searchNavigator)
                 .modifier(TabItem(.search))
-        }.accentColor(R.color.steam_gold.color)
-
+        }
+        .introspectTabBarController(customize: { (UITabBarController) in
+            UITabBarController.tabBar.isHidden = tabState.hideTabView
+        })
+        .accentColor(R.color.steam_gold.color)
+        .environmentObject(tabState)
     }
 }
 

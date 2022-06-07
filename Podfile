@@ -7,6 +7,9 @@ workspace 'TMDB'
 # Core
 def core_pods
   pod 'Swinject'
+  pod 'Introspect'
+  pod 'CombineExt'
+  pod 'Stinsen'
 end
 
 target 'Core' do
@@ -37,6 +40,11 @@ target 'Domain' do
   core_pods
 end
 
+target 'FluxCore' do
+  project 'Flux/FluxCore.xcproject'
+end
+
+
 # Resources
 def resources_pods
   pod 'SDWebImageSwiftUI'
@@ -64,6 +72,13 @@ end
 # SearchMovie
 target 'SearchMovie' do
   project 'SearchMovie/SearchMovie.xcproject'
+  resources_pods
+  core_pods
+end
+
+# SearchMovieFlux
+target 'SearchMovieFlux' do
+  project 'SearchMovieFlux/SearchMovieFlux.xcproject'
   resources_pods
   core_pods
 end

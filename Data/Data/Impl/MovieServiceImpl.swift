@@ -57,6 +57,19 @@ public class MovieServiceImpl: MovieService {
             .eraseToAnyPublisher()
     }
     
+    public func fetchSimilarMovies(id: String) -> AnyPublisher<MovieListResponse, MovieError> {
+        let target = MovieTarget.similar(id: id)
+        return network.requestPublisher(targetType: target)
+            .tryMap { movieList -> MovieListResponse in
+                return movieList
+            }
+            .mapError { error -> MovieError in
+                print("🌶🌶🌶 fetchRecommendations error: \(error)")
+                return .similar
+            }
+            .eraseToAnyPublisher()
+    }
+    
     public func fetchMovieByCategory(category: MovieCategory) -> AnyPublisher<MovieListResponse, MovieError> {
         let movieTarget: MovieTarget = category.initMovieTarget()
         switch movieTarget {
@@ -73,6 +86,19 @@ public class MovieServiceImpl: MovieService {
         default:
             return AnyPublisher(Fail<MovieListResponse, MovieError>(error: .outOfTarget))
         }
+    }
+    
+    public func fetchCredit(id: String) -> AnyPublisher<CreditResponse, MovieError> {
+        let target = MovieTarget.fetchCredit(id: id)
+        return network.requestPublisher(targetType: target)
+            .tryMap { result -> CreditResponse in
+                return result
+            }
+            .mapError { error -> MovieError in
+                print("🌶🌶🌶 fetchCredit error: \(error)")
+                return .fetchCredits
+            }
+            .eraseToAnyPublisher()
     }
 }
 
@@ -99,15 +125,17 @@ public enum MovieTarget {
     case searchMovie(input: String)
     case fetchMovie(id: String)
     case fetchRecommendations(id: String)
+    case fetchCredit(id: String)
+    case similar(id: String)
 }
 
 extension MovieTarget: TargetType {
     public var apiKey: String {
-        return "02f4ea80210dac5addfcb95ec72a8b7c"
+        return TmdbInfo.apiKey
     }
 
     public var baseURL: URL {
-        return URL(string: "https://api.themoviedb.org/3")!
+        return URL(string: TmdbInfo.endpointUrl)!
     }
     
     public var path: String {
@@ -126,12 +154,16 @@ extension MovieTarget: TargetType {
             return "/movie/\(id)"
         case .fetchRecommendations(let id):
             return "/movie/\(id)/recommendations"
+        case .fetchCredit(let id):
+            return "/movie/\(id)/credits"
+        case .similar(let id):
+            return "/movie/\(id)/similar"
         }
     }
     
     public var method: HTTPMethod {
         switch self {
-        case .searchMovie, .fetchMovie, .fetchRecommendations, .topRated, .popular, .nowPlaying, .upcoming:
+        case .searchMovie, .fetchMovie, .fetchRecommendations, .topRated, .popular, .nowPlaying, .upcoming, .fetchCredit, .similar:
             return .get
         }
     }

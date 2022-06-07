@@ -28,7 +28,6 @@ public final class SearchMovieViewModelImpl: SearchTextObservable, SearchMovieVi
     @Published public var query = ""
     @Published public var viewModelState: LoadableState = .idle
 
-    
     public override func onUpdateTextDebounced(text: String) {
         guard !text.isEmpty else {
             viewModelState = .idle

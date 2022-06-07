@@ -26,3 +26,9 @@ public extension Navigator {
         steppers.forEach { contribute($0) }
     }
 }
+
+public extension Navigator where Self: Stepper {
+    func forwardToParent(_ step: Step) {
+        steps.send(step)
+    }
+}

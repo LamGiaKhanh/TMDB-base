@@ -58,10 +58,13 @@ public extension View {
 
     func sheet<Model, Content: View>(
         model: Binding<Model?>,
-        @ViewBuilder content: @escaping (Model) -> Content
+        @ViewBuilder content: @escaping (Model, Binding<Bool>) -> Content
     ) -> some View {
-        sheet(item: model.objectIdentifiable()) { _ in
-            model.wrappedValue.map(content)
+        let isPresented = model.asBool()
+        return sheet(isPresented: isPresented) {
+            model.wrappedValue.map {
+                content($0, isPresented)
+            }
         }
     }
 
@@ -124,6 +127,19 @@ public extension View {
             minHeight: 0,
             maxHeight: .infinity
         )
+    }
+    
+    func hidden(_ shouldHide: Bool) -> some View {
+        opacity(shouldHide ? 0 : 1)
+    }
+    
+    func handleIsPresented(_ isPresented: Binding<Bool>,
+                           onActive: @escaping (Binding<Bool>) -> Void,
+                           onInactive: @escaping () -> Void) -> some View {
+        onAppear {
+            onActive(isPresented)
+        }
+        .onDisappear(perform: onInactive)
     }
 }
 

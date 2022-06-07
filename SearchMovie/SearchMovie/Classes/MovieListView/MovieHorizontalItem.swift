@@ -26,7 +26,6 @@ public struct MovieHorizontalItem: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: 125, height: 180)
-                    .background(R.color.steam_gold.color)
                     .cornerRadius(10)
                     .padding(.top, 4)
                     .skeleton(with: loading, size: CGSize(width: 125, height: 180))
@@ -50,12 +49,13 @@ public struct MovieHorizontalItem: View {
                     .shape(type: .rectangle)
                     .appearance(type: .gradient())
                     .animation(type: .linear())
-                PopularityBadge(score: Int((movie?.voteAverage ?? 1) * 10), textColor: R.color.steam_rust.color)
+                Spacer()
+                PopularityBadge(score: Int((movie?.voteAverage ?? 2) * 10), textColor: R.color.steam_rust.color)
                     .skeleton(with: loading, size: CGSize(width: 40, height: 40))
                     .shape(type: .circle)
                     .appearance(type: .gradient(.angular))
                     .animation(type: .linear())
-                Spacer()
+                    .padding(.bottom, 4)
             }.frame(width: 120, height: 300)
     }
 }

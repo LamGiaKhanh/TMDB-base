@@ -6,22 +6,24 @@
 //
 
 import Foundation
-import Combine
-import Core
 import DashboardTab
 import SearchMovie
+import Domain
+import Core
+import Combine
 
 protocol HomeNavigator: NavigatorModel, Stepper {
     var tabSelected: MainTab { get set }
-    var dashboardNavigator: DashboardNavigator { get set }
-    var searchNavigator: SearchMovieNavigator { get set }
+    var dashboardNavigator: DashboardNavigator { get }
+    var searchNavigator: SearchMovieNavigator { get }
 }
 
 enum HomeStep: Step {
     case setting
 }
 
-class HomeNavigatorImpl: HomeNavigator, ObservableObject {
+class HomeNavigatorImpl: HomeNavigator, ObservableObject, Resolving {
+    
     var cancellables = Set<AnyCancellable>()
     let steps = PassthroughSubject<Step, Never>()
     
@@ -29,6 +31,7 @@ class HomeNavigatorImpl: HomeNavigator, ObservableObject {
     
     @Injected var dashboardNavigator: DashboardNavigator
     @Injected var searchNavigator: SearchMovieNavigator
+    
     
     deinit {
         print("HomeNavigatorImpl deinit")

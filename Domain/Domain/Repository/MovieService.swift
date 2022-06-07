@@ -13,6 +13,8 @@ public protocol MovieService {
     func fetchMovie(id: String) -> AnyPublisher<Movie, MovieError>
     func fetchRecommendations(id: String) -> AnyPublisher<MovieListResponse, MovieError>
     func fetchMovieByCategory(category: MovieCategory) -> AnyPublisher<MovieListResponse, MovieError>
+    func fetchCredit(id: String) -> AnyPublisher<CreditResponse, MovieError>
+    func fetchSimilarMovies(id: String) -> AnyPublisher<MovieListResponse, MovieError>
 }
 
 public enum MovieCategory {
@@ -30,5 +32,7 @@ public enum MovieError: String, Error {
     case searchMovie
     case fetchMovie
     case fetchRecommendations
+    case fetchCredits
+    case similar
     case outOfTarget
 }

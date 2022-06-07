@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		39692C6228364DDD00978F94 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39692C6128364DDD00978F94 /* ResultState.swift */; };
+		3998C5DC2849DFFA00BD7DC6 /* MoviePageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998C5DB2849DFFA00BD7DC6 /* MoviePageListener.swift */; };
+		3998C5EC2849E31900BD7DC6 /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 3998C5EB2849E31900BD7DC6 /* SwiftUIFlux */; };
+		39CCDA8D283B7D5D0065BAB5 /* TabState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCDA8C283B7D5D0065BAB5 /* TabState.swift */; };
 		39F8059528376B500028986C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8059428376B500028986C /* BaseViewModel.swift */; };
 		78EAE224282A4D9B00610735 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 78EAE223282A4D9B00610735 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78EAE272282A4EAC00610735 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EAE238282A4EAB00610735 /* AppStorage.swift */; };
@@ -43,6 +46,8 @@
 /* Begin PBXFileReference section */
 		084C849E0AE9C059FC540CC2 /* Pods_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39692C6128364DDD00978F94 /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		3998C5DB2849DFFA00BD7DC6 /* MoviePageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePageListener.swift; sourceTree = "<group>"; };
+		39CCDA8C283B7D5D0065BAB5 /* TabState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabState.swift; sourceTree = "<group>"; };
 		39F8059428376B500028986C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		78EAE220282A4D9B00610735 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EAE223282A4D9B00610735 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8681663452D017F189FADE76 /* Pods_Core.framework in Frameworks */,
+				3998C5EC2849E31900BD7DC6 /* SwiftUIFlux in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +151,7 @@
 				78EAE261282A4EAB00610735 /* Analytics */,
 				78EAE268282A4EAB00610735 /* DI */,
 				78EAE223282A4D9B00610735 /* Core.h */,
+				3998C5DB2849DFFA00BD7DC6 /* MoviePageListener.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 				78EAE238282A4EAB00610735 /* AppStorage.swift */,
 				78EAE239282A4EAB00610735 /* AppConstants.swift */,
 				39692C6128364DDD00978F94 /* ResultState.swift */,
+				39CCDA8C283B7D5D0065BAB5 /* TabState.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -279,6 +287,9 @@
 			dependencies = (
 			);
 			name = Core;
+			packageProductDependencies = (
+				3998C5EB2849E31900BD7DC6 /* SwiftUIFlux */,
+			);
 			productName = Core;
 			productReference = 78EAE220282A4D9B00610735 /* Core.framework */;
 			productType = "com.apple.product-type.framework";
@@ -307,6 +318,9 @@
 				ja,
 			);
 			mainGroup = 78EAE216282A4D9B00610735;
+			packageReferences = (
+				3998C5EA2849E31900BD7DC6 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
+			);
 			productRefGroup = 78EAE221282A4D9B00610735 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +374,7 @@
 				78EAE276282A4EAC00610735 /* String++.swift in Sources */,
 				78EAE279282A4EAC00610735 /* Dictionary++.swift in Sources */,
 				78EAE27E282A4EAC00610735 /* AppButton.swift in Sources */,
+				39CCDA8D283B7D5D0065BAB5 /* TabState.swift in Sources */,
 				78EAE285282A4EAC00610735 /* Dismissable.swift in Sources */,
 				78EAE296282A4EAC00610735 /* Injected.swift in Sources */,
 				78EAE287282A4EAC00610735 /* Stepper.swift in Sources */,
@@ -383,6 +398,7 @@
 				78EAE298282A4EAC00610735 /* Assembler.swift in Sources */,
 				78EAE27D282A4EAC00610735 /* View++.swift in Sources */,
 				78EAE280282A4EAC00610735 /* Store.swift in Sources */,
+				3998C5DC2849DFFA00BD7DC6 /* MoviePageListener.swift in Sources */,
 				78EAE278282A4EAC00610735 /* Publisher++.swift in Sources */,
 				78EAE297282A4EAC00610735 /* Resolving.swift in Sources */,
 			);
@@ -593,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3998C5EA2849E31900BD7DC6 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dimillian/SwiftUIFlux";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3998C5EB2849E31900BD7DC6 /* SwiftUIFlux */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3998C5EA2849E31900BD7DC6 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */;
+			productName = SwiftUIFlux;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78EAE217282A4D9B00610735 /* Project object */;
 }

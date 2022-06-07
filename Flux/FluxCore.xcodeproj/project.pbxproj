@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39066B9E7CC6AAE49764CF95 /* Pods_FluxCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59939AF50CA7AAAEF44D9A37 /* Pods_FluxCore.framework */; };
+		3998C5FB2849E36600BD7DC6 /* Flux.h in Headers */ = {isa = PBXBuildFile; fileRef = 3998C5FA2849E36600BD7DC6 /* Flux.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3998C6302849E48B00BD7DC6 /* Domain.framework in Copy Framworks */ = {isa = PBXBuildFile; fileRef = 3998C62E2849E47200BD7DC6 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3998C6342849E68000BD7DC6 /* MoviePagesListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998C6332849E68000BD7DC6 /* MoviePagesListener.swift */; };
+		3998C6362849E6A200BD7DC6 /* MoviesSearchPageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998C6352849E6A200BD7DC6 /* MoviesSearchPageListener.swift */; };
+		3998C63D2849E78400BD7DC6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998C63C2849E78400BD7DC6 /* AppState.swift */; };
+		3998C63F2849E98800BD7DC6 /* AppStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998C63E2849E98800BD7DC6 /* AppStateReducer.swift */; };
+		3998C6412849EB7400BD7DC6 /* MoviesActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998C6402849EB7400BD7DC6 /* MoviesActions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3998C62D2849E47200BD7DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3998C6292849E47200BD7DC6 /* Domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78A5F4AE2824DEEB00E7A819;
+			remoteInfo = Domain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3998C62F2849E47E00BD7DC6 /* Copy Framworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3998C6302849E48B00BD7DC6 /* Domain.framework in Copy Framworks */,
+			);
+			name = "Copy Framworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3998C5F72849E36600BD7DC6 /* FluxCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FluxCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3998C5FA2849E36600BD7DC6 /* Flux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flux.h; sourceTree = "<group>"; };
+		3998C6292849E47200BD7DC6 /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = ../Domain/Domain.xcodeproj; sourceTree = "<group>"; };
+		3998C6332849E68000BD7DC6 /* MoviePagesListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePagesListener.swift; sourceTree = "<group>"; };
+		3998C6352849E6A200BD7DC6 /* MoviesSearchPageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesSearchPageListener.swift; sourceTree = "<group>"; };
+		3998C63C2849E78400BD7DC6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3998C63E2849E98800BD7DC6 /* AppStateReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateReducer.swift; sourceTree = "<group>"; };
+		3998C6402849EB7400BD7DC6 /* MoviesActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesActions.swift; sourceTree = "<group>"; };
+		59939AF50CA7AAAEF44D9A37 /* Pods_FluxCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FluxCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8FEBBB1DAF193E5B658094 /* Pods-FluxCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluxCore.release.xcconfig"; path = "Target Support Files/Pods-FluxCore/Pods-FluxCore.release.xcconfig"; sourceTree = "<group>"; };
+		A0745DD864C32955431FE91A /* Pods-FluxCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluxCore.debug.xcconfig"; path = "Target Support Files/Pods-FluxCore/Pods-FluxCore.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3998C5F42849E36600BD7DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39066B9E7CC6AAE49764CF95 /* Pods_FluxCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3998C5ED2849E36600BD7DC6 = {
+			isa = PBXGroup;
+			children = (
+				3998C6282849E46800BD7DC6 /* Dependencies */,
+				3998C5F92849E36600BD7DC6 /* Flux */,
+				3998C5F82849E36600BD7DC6 /* Products */,
+				7090317FA29CEBEA25B65503 /* Pods */,
+				5B43B48664E5859E389A255E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3998C5F82849E36600BD7DC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3998C5F72849E36600BD7DC6 /* FluxCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3998C5F92849E36600BD7DC6 /* Flux */ = {
+			isa = PBXGroup;
+			children = (
+				3998C6372849E74000BD7DC6 /* Classes */,
+				3998C6322849E4AD00BD7DC6 /* Wrapper */,
+				3998C6312849E4A200BD7DC6 /* Listener */,
+				3998C5FA2849E36600BD7DC6 /* Flux.h */,
+			);
+			path = Flux;
+			sourceTree = "<group>";
+		};
+		3998C6282849E46800BD7DC6 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				3998C6292849E47200BD7DC6 /* Domain.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		3998C62A2849E47200BD7DC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3998C62E2849E47200BD7DC6 /* Domain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3998C6312849E4A200BD7DC6 /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				3998C6332849E68000BD7DC6 /* MoviePagesListener.swift */,
+				3998C6352849E6A200BD7DC6 /* MoviesSearchPageListener.swift */,
+			);
+			path = Listener;
+			sourceTree = "<group>";
+		};
+		3998C6322849E4AD00BD7DC6 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		3998C6372849E74000BD7DC6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3998C63B2849E76400BD7DC6 /* Middlewares */,
+				3998C63A2849E75E00BD7DC6 /* Actions */,
+				3998C6392849E75800BD7DC6 /* Reducers */,
+				3998C6382849E74D00BD7DC6 /* State */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3998C6382849E74D00BD7DC6 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				3998C63C2849E78400BD7DC6 /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		3998C6392849E75800BD7DC6 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				3998C63E2849E98800BD7DC6 /* AppStateReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		3998C63A2849E75E00BD7DC6 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				3998C6402849EB7400BD7DC6 /* MoviesActions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		3998C63B2849E76400BD7DC6 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		5B43B48664E5859E389A255E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59939AF50CA7AAAEF44D9A37 /* Pods_FluxCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7090317FA29CEBEA25B65503 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0745DD864C32955431FE91A /* Pods-FluxCore.debug.xcconfig */,
+				6A8FEBBB1DAF193E5B658094 /* Pods-FluxCore.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3998C5F22849E36600BD7DC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3998C5FB2849E36600BD7DC6 /* Flux.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3998C5F62849E36600BD7DC6 /* FluxCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3998C5FE2849E36600BD7DC6 /* Build configuration list for PBXNativeTarget "FluxCore" */;
+			buildPhases = (
+				4486A393F8F02B922D4F3FBA /* [CP] Check Pods Manifest.lock */,
+				3998C5F22849E36600BD7DC6 /* Headers */,
+				3998C5F32849E36600BD7DC6 /* Sources */,
+				3998C5F42849E36600BD7DC6 /* Frameworks */,
+				3998C5F52849E36600BD7DC6 /* Resources */,
+				3998C62F2849E47E00BD7DC6 /* Copy Framworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FluxCore;
+			productName = Flux;
+			productReference = 3998C5F72849E36600BD7DC6 /* FluxCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3998C5EE2849E36600BD7DC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3998C5F62849E36600BD7DC6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 3998C5F12849E36600BD7DC6 /* Build configuration list for PBXProject "FluxCore" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3998C5ED2849E36600BD7DC6;
+			productRefGroup = 3998C5F82849E36600BD7DC6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3998C62A2849E47200BD7DC6 /* Products */;
+					ProjectRef = 3998C6292849E47200BD7DC6 /* Domain.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3998C5F62849E36600BD7DC6 /* FluxCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3998C62E2849E47200BD7DC6 /* Domain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Domain.framework;
+			remoteRef = 3998C62D2849E47200BD7DC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3998C5F52849E36600BD7DC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4486A393F8F02B922D4F3FBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FluxCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3998C5F32849E36600BD7DC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3998C63F2849E98800BD7DC6 /* AppStateReducer.swift in Sources */,
+				3998C6412849EB7400BD7DC6 /* MoviesActions.swift in Sources */,
+				3998C63D2849E78400BD7DC6 /* AppState.swift in Sources */,
+				3998C6362849E6A200BD7DC6 /* MoviesSearchPageListener.swift in Sources */,
+				3998C6342849E68000BD7DC6 /* MoviePagesListener.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3998C5FC2849E36600BD7DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3998C5FD2849E36600BD7DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3998C5FF2849E36600BD7DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0745DD864C32955431FE91A /* Pods-FluxCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3U55QZ72L6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kayg.Flux;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3998C6002849E36600BD7DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A8FEBBB1DAF193E5B658094 /* Pods-FluxCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3U55QZ72L6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kayg.Flux;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3998C5F12849E36600BD7DC6 /* Build configuration list for PBXProject "FluxCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3998C5FC2849E36600BD7DC6 /* Debug */,
+				3998C5FD2849E36600BD7DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3998C5FE2849E36600BD7DC6 /* Build configuration list for PBXNativeTarget "FluxCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3998C5FF2849E36600BD7DC6 /* Debug */,
+				3998C6002849E36600BD7DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3998C5EE2849E36600BD7DC6 /* Project object */;
+}

@@ -22,6 +22,17 @@ public extension Binding {
             }
         )
     }
+    
+    func asBool<T>() -> Binding<Bool> where Value == T? {
+        .init(
+            get: { wrappedValue != nil },
+            set: { value in
+                if !value {
+                    wrappedValue = nil
+                }
+            }
+        )
+    }
 }
 
 public struct ObjectIdentifiable: Identifiable {

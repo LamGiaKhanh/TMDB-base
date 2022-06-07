@@ -36,5 +36,13 @@ public class DomainAssembly: Assembly {
         container.register(MovieRecommendationsUseCase.self) { _ in
             MovieRecommendationsUseCase()
         }
+        
+        container.register(MovieCreditsUseCase.self) { _ in
+            MovieCreditsUseCase()
+        }
+        
+        container.register(FetchSimilarMovieUseCase.self) { _ in
+            FetchSimilarMovieUseCase()
+        }
     }
 }

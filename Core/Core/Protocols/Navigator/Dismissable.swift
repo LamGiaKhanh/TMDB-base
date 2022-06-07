@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 public protocol Dismissable {
     func dismiss()
@@ -20,6 +21,16 @@ public extension Dismissable {
             deadline = deadline + delay * Double(i + 1)
             DispatchQueue.main.asyncAfter(deadline: deadline) {
                 dis.dismiss()
+            }
+        }
+    }
+    
+    func dismiss(presentedList: [Binding<Bool>], delay: Double = 0.12) {
+        var deadline: DispatchTime = .now()
+        for (i, dis) in presentedList.reversed().enumerated() {
+            deadline = deadline + delay * Double(i + 1)
+            DispatchQueue.main.asyncAfter(deadline: deadline) {
+                dis.wrappedValue = false
             }
         }
     }

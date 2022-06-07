@@ -32,9 +32,16 @@
 		391DEDBD282E2FD700282BAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDBC282E2FD700282BAB /* ContentView.swift */; };
 		391DEDBF282E321300282BAB /* LoginNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DEDBE282E321300282BAB /* LoginNavigatorView.swift */; };
 		391DEE25282E574700282BAB /* SearchMovie.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 391DEE24282E542D00282BAB /* SearchMovie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		395BC34F2833A15D00EFEB7B /* MovieDetail.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 395BC34C2833A15800EFEB7B /* MovieDetail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39692C432836024100978F94 /* PreviewMocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39692C422836024100978F94 /* PreviewMocked.swift */; };
 		398BC6B92834D55200A28ED3 /* Common.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 398BC6922834D4EF00A28ED3 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3998C61E2849E43F00BD7DC6 /* FluxCore.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3998C6062849E3BD00BD7DC6 /* FluxCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3998C6272849E44300BD7DC6 /* SearchMovieFlux.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3998C5E92849E04900BD7DC6 /* SearchMovieFlux.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39BB39A3283F5C0D00D94B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BB39A2283F5C0D00D94B90 /* Assets.xcassets */; };
+		39BB39EF283F6CDC00D94B90 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB39EE283F6CDC00D94B90 /* MainCoordinator.swift */; };
+		39BB39F3283F6DA500D94B90 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB39F2283F6DA500D94B90 /* AuthenticationCoordinator.swift */; };
+		39BB39F7283F6DC300D94B90 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB39F6283F6DC300D94B90 /* DashboardCoordinator.swift */; };
+		39BB39FC283F6FBF00D94B90 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB39FB283F6FBF00D94B90 /* AuthenticationService.swift */; };
+		39BB39FE283F6FCE00D94B90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB39FD283F6FCE00D94B90 /* User.swift */; };
 		B54CA26939075892DE65217A /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16361D954F76E664C64A3FE5 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,19 +102,26 @@
 			remoteGlobalIDString = 3937E9B6282E098B005954E5;
 			remoteInfo = App;
 		};
-		395BC34B2833A15800EFEB7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 395BC3432833A15800EFEB7B /* MovieDetail.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 395BC3242833A0A500EFEB7B;
-			remoteInfo = MovieDetail;
-		};
 		398BC6912834D4EF00A28ED3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 398BC68D2834D4EF00A28ED3 /* Common.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 398BC67A2834D47A00A28ED3;
 			remoteInfo = Common;
+		};
+		3998C5E82849E04900BD7DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3998C5DD2849E04900BD7DC6 /* SearchMovieFlux.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3998C5D02849DF9E00BD7DC6;
+			remoteInfo = SearchMovieFlux;
+		};
+		3998C6052849E3BD00BD7DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3998C6012849E3BD00BD7DC6 /* FluxCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3998C5F72849E36600BD7DC6;
+			remoteInfo = FluxCore;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -121,10 +135,11 @@
 				391DEE25282E574700282BAB /* SearchMovie.framework in Copy Frameworks */,
 				391DED02282E0DBB00282BAB /* Resources.framework in Copy Frameworks */,
 				391DECDC282E0BF600282BAB /* Core.framework in Copy Frameworks */,
+				3998C6272849E44300BD7DC6 /* SearchMovieFlux.framework in Copy Frameworks */,
 				391DED00282E0DAE00282BAB /* Data.framework in Copy Frameworks */,
+				3998C61E2849E43F00BD7DC6 /* FluxCore.framework in Copy Frameworks */,
 				391DED01282E0DB400282BAB /* Domain.framework in Copy Frameworks */,
 				391DED8F282E12DF00282BAB /* DashboardTab.framework in Copy Frameworks */,
-				395BC34F2833A15D00EFEB7B /* MovieDetail.framework in Copy Frameworks */,
 				398BC6B92834D55200A28ED3 /* Common.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -164,9 +179,16 @@
 		3937E9B7282E098B005954E5 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3937E9C7282E098E005954E5 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3937E9D1282E098E005954E5 /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		395BC3432833A15800EFEB7B /* MovieDetail.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieDetail.xcodeproj; path = ../MovieDetail/MovieDetail.xcodeproj; sourceTree = "<group>"; };
 		39692C422836024100978F94 /* PreviewMocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocked.swift; sourceTree = "<group>"; };
 		398BC68D2834D4EF00A28ED3 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = ../Common/Common.xcodeproj; sourceTree = "<group>"; };
+		3998C5DD2849E04900BD7DC6 /* SearchMovieFlux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SearchMovieFlux.xcodeproj; path = ../SearchMovieFlux/SearchMovieFlux.xcodeproj; sourceTree = "<group>"; };
+		3998C6012849E3BD00BD7DC6 /* FluxCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FluxCore.xcodeproj; path = ../Flux/FluxCore.xcodeproj; sourceTree = "<group>"; };
+		39BB39A2283F5C0D00D94B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39BB39EE283F6CDC00D94B90 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		39BB39F2283F6DA500D94B90 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		39BB39F6283F6DC300D94B90 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		39BB39FB283F6FBF00D94B90 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		39BB39FD283F6FCE00D94B90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4A38B84EDFC78CBC11351115 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 		D1229ADFA88D1E0124058F91 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +239,7 @@
 		391DECDD282E0C3200282BAB /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				39BB39E5283F6CBD00D94B90 /* Coordinators */,
 				391DED03282E0E1600282BAB /* PluggableApplication */,
 				391DED05282E0E5500282BAB /* AppDelegate.swift */,
 				391DED04282E0E5500282BAB /* App-Bridging-Header.h */,
@@ -346,6 +369,7 @@
 		3937E9AE282E098B005954E5 = {
 			isa = PBXGroup;
 			children = (
+				39BB39A2283F5C0D00D94B90 /* Assets.xcassets */,
 				391DEDBC282E2FD700282BAB /* ContentView.swift */,
 				391DED24282E105E00282BAB /* TMDBApp.swift */,
 				3937E9E4282E0A56005954E5 /* Dependencies */,
@@ -371,23 +395,16 @@
 			isa = PBXGroup;
 			children = (
 				391DECD6282E0BC500282BAB /* Core.xcodeproj */,
+				3998C6012849E3BD00BD7DC6 /* FluxCore.xcodeproj */,
 				391DECED282E0D9C00282BAB /* Data.xcodeproj */,
 				391DECF4282E0DA100282BAB /* Domain.xcodeproj */,
 				398BC68D2834D4EF00A28ED3 /* Common.xcodeproj */,
 				391DECFA282E0DA600282BAB /* Resources.xcodeproj */,
 				391DED85282E12BD00282BAB /* DashboardTab.xcodeproj */,
 				391DEE1A282E542D00282BAB /* SearchMovie.xcodeproj */,
-				395BC3432833A15800EFEB7B /* MovieDetail.xcodeproj */,
+				3998C5DD2849E04900BD7DC6 /* SearchMovieFlux.xcodeproj */,
 			);
 			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		395BC3442833A15800EFEB7B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				395BC34C2833A15800EFEB7B /* MovieDetail.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		39692C392836023500978F94 /* Preview */ = {
@@ -404,6 +421,42 @@
 				398BC6922834D4EF00A28ED3 /* Common.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3998C5DE2849E04900BD7DC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3998C5E92849E04900BD7DC6 /* SearchMovieFlux.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3998C6022849E3BD00BD7DC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3998C6062849E3BD00BD7DC6 /* FluxCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39BB39E5283F6CBD00D94B90 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				39BB39FA283F6FB300D94B90 /* Service */,
+				39BB39EE283F6CDC00D94B90 /* MainCoordinator.swift */,
+				39BB39F2283F6DA500D94B90 /* AuthenticationCoordinator.swift */,
+				39BB39F6283F6DC300D94B90 /* DashboardCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		39BB39FA283F6FB300D94B90 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				39BB39FB283F6FBF00D94B90 /* AuthenticationService.swift */,
+				39BB39FD283F6FCE00D94B90 /* User.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		F5EDD2A57D0403669B24A770 /* Pods */ = {
@@ -532,8 +585,8 @@
 					ProjectRef = 391DECF4282E0DA100282BAB /* Domain.xcodeproj */;
 				},
 				{
-					ProductGroup = 395BC3442833A15800EFEB7B /* Products */;
-					ProjectRef = 395BC3432833A15800EFEB7B /* MovieDetail.xcodeproj */;
+					ProductGroup = 3998C6022849E3BD00BD7DC6 /* Products */;
+					ProjectRef = 3998C6012849E3BD00BD7DC6 /* FluxCore.xcodeproj */;
 				},
 				{
 					ProductGroup = 391DECFB282E0DA600282BAB /* Products */;
@@ -542,6 +595,10 @@
 				{
 					ProductGroup = 391DEE1B282E542D00282BAB /* Products */;
 					ProjectRef = 391DEE1A282E542D00282BAB /* SearchMovie.xcodeproj */;
+				},
+				{
+					ProductGroup = 3998C5DE2849E04900BD7DC6 /* Products */;
+					ProjectRef = 3998C5DD2849E04900BD7DC6 /* SearchMovieFlux.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -596,18 +653,25 @@
 			remoteRef = 391DEE23282E542D00282BAB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		395BC34C2833A15800EFEB7B /* MovieDetail.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MovieDetail.framework;
-			remoteRef = 395BC34B2833A15800EFEB7B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		398BC6922834D4EF00A28ED3 /* Common.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Common.framework;
 			remoteRef = 398BC6912834D4EF00A28ED3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3998C5E92849E04900BD7DC6 /* SearchMovieFlux.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SearchMovieFlux.framework;
+			remoteRef = 3998C5E82849E04900BD7DC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3998C6062849E3BD00BD7DC6 /* FluxCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FluxCore.framework;
+			remoteRef = 3998C6052849E3BD00BD7DC6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -617,6 +681,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39BB39A3283F5C0D00D94B90 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,14 +749,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				391DEDBD282E2FD700282BAB /* ContentView.swift in Sources */,
+				39BB39EF283F6CDC00D94B90 /* MainCoordinator.swift in Sources */,
 				391DEDBF282E321300282BAB /* LoginNavigatorView.swift in Sources */,
 				391DEDB2282E2CD000282BAB /* LoginNavigator.swift in Sources */,
 				391DED19282E0EAA00282BAB /* AmplifyInitialzer.swift in Sources */,
 				391DED23282E0F2900282BAB /* SplashView.swift in Sources */,
+				39BB39F7283F6DC300D94B90 /* DashboardCoordinator.swift in Sources */,
 				391DED16282E0EAA00282BAB /* ScenesAssembly.swift in Sources */,
 				391DEDB5282E2D4700282BAB /* LoginViewModel.swift in Sources */,
 				39692C432836024100978F94 /* PreviewMocked.swift in Sources */,
 				391DED18282E0EAA00282BAB /* DIInitializer.swift in Sources */,
+				39BB39FC283F6FBF00D94B90 /* AuthenticationService.swift in Sources */,
 				391DED27282E10B000282BAB /* HomeNavigator.swift in Sources */,
 				391DED25282E105E00282BAB /* TMDBApp.swift in Sources */,
 				391DED1B282E0EAA00282BAB /* ContentNavigator.swift in Sources */,
@@ -699,9 +767,11 @@
 				391DEDB7282E2E1C00282BAB /* LoginView.swift in Sources */,
 				391DED21282E0F2100282BAB /* SplashViewModel.swift in Sources */,
 				391DEDAE282E18D300282BAB /* HomeNavigatorView.swift in Sources */,
+				39BB39FE283F6FCE00D94B90 /* User.swift in Sources */,
 				391DED06282E0E5500282BAB /* AppDelegate.swift in Sources */,
 				391DED0A282E0E8B00282BAB /* PluggableApplicationDelegate.swift in Sources */,
 				391DED09282E0E8B00282BAB /* PluggableSceneDelegate.swift in Sources */,
+				39BB39F3283F6DA500D94B90 /* AuthenticationCoordinator.swift in Sources */,
 				391DED1A282E0EAA00282BAB /* CommonInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

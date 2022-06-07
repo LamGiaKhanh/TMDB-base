@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3916F6972847574E00098B1D /* MovieWaterfallGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3916F6962847574E00098B1D /* MovieWaterfallGrid.swift */; };
 		398223E12835EB49002B3134 /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398223E02835EB49002B3134 /* FilledButton.swift */; };
 		398224002835F932002B3134 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398223FF2835F932002B3134 /* AppText.swift */; };
 		398BC67E2834D47A00A28ED3 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 398BC67D2834D47A00A28ED3 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,8 @@
 		398BC7262834D85000A28ED3 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398BC7182834D85000A28ED3 /* SearchField.swift */; };
 		398BC72A2834D8CF00A28ED3 /* MovieHorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398BC7292834D8CF00A28ED3 /* MovieHorizontalListView.swift */; };
 		398BC72C2834D8DD00A28ED3 /* MovieHorizontalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398BC72B2834D8DD00A28ED3 /* MovieHorizontalItem.swift */; };
+		39B8BB89283C79B700C5BE1C /* CastHorizontalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B8BB88283C79B700C5BE1C /* CastHorizontalItem.swift */; };
+		39B8BB8B283C7A3F00C5BE1C /* CastHorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B8BB8A283C7A3F00C5BE1C /* CastHorizontalListView.swift */; };
 		39F8059A28377B9B0028986C /* MovieHorizontalMockedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8059928377B9B0028986C /* MovieHorizontalMockedItem.swift */; };
 		87B7179C381D8370611E2554 /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD9B2896DB49FA722737B7 /* Pods_Common.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		10A8DECB450EC4A42A933591 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
+		3916F6962847574E00098B1D /* MovieWaterfallGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieWaterfallGrid.swift; sourceTree = "<group>"; };
 		398223E02835EB49002B3134 /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
 		398223FF2835F932002B3134 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
 		398BC67A2834D47A00A28ED3 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +90,8 @@
 		398BC7182834D85000A28ED3 /* SearchField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		398BC7292834D8CF00A28ED3 /* MovieHorizontalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHorizontalListView.swift; sourceTree = "<group>"; };
 		398BC72B2834D8DD00A28ED3 /* MovieHorizontalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHorizontalItem.swift; sourceTree = "<group>"; };
+		39B8BB88283C79B700C5BE1C /* CastHorizontalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastHorizontalItem.swift; sourceTree = "<group>"; };
+		39B8BB8A283C7A3F00C5BE1C /* CastHorizontalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastHorizontalListView.swift; sourceTree = "<group>"; };
 		39F8059928377B9B0028986C /* MovieHorizontalMockedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHorizontalMockedItem.swift; sourceTree = "<group>"; };
 		7ACD9B2896DB49FA722737B7 /* Pods_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40C57F75A940D432312A2F0 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +117,14 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		3916F6932847573C00098B1D /* MovieWaterfallGrid */ = {
+			isa = PBXGroup;
+			children = (
+				3916F6962847574E00098B1D /* MovieWaterfallGrid.swift */,
+			);
+			path = MovieWaterfallGrid;
 			sourceTree = "<group>";
 		};
 		398223DF2835EB3D002B3134 /* FIlledButton */ = {
@@ -185,6 +199,8 @@
 		398BC6C12834D5A400A28ED3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3916F6932847573C00098B1D /* MovieWaterfallGrid */,
+				39B8BB85283C799F00C5BE1C /* Credits */,
 				39F8059628377B730028986C /* MockedView */,
 				398223FC2835F924002B3134 /* AppText */,
 				398223DF2835EB3D002B3134 /* FIlledButton */,
@@ -259,6 +275,15 @@
 			);
 			name = SearchField;
 			path = ../../../Core/Core/Components/SearchField;
+			sourceTree = "<group>";
+		};
+		39B8BB85283C799F00C5BE1C /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				39B8BB88283C79B700C5BE1C /* CastHorizontalItem.swift */,
+				39B8BB8A283C7A3F00C5BE1C /* CastHorizontalListView.swift */,
+			);
+			path = Credits;
 			sourceTree = "<group>";
 		};
 		39F8059628377B730028986C /* MockedView */ = {
@@ -412,6 +437,7 @@
 			files = (
 				398BC6C92834D5B100A28ED3 /* MovieListView.swift in Sources */,
 				398224002835F932002B3134 /* AppText.swift in Sources */,
+				3916F6972847574E00098B1D /* MovieWaterfallGrid.swift in Sources */,
 				398BC7232834D85000A28ED3 /* GrowingButton.swift in Sources */,
 				398BC71D2834D85000A28ED3 /* PointRandomization.swift in Sources */,
 				398BC7252834D85000A28ED3 /* SearchTextObservable.swift in Sources */,
@@ -425,7 +451,9 @@
 				398BC6CA2834D5B100A28ED3 /* MovieRow.swift in Sources */,
 				398BC7222834D85000A28ED3 /* Colorful.swift in Sources */,
 				398BC7192834D85000A28ED3 /* PopularityBagde.swift in Sources */,
+				39B8BB8B283C7A3F00C5BE1C /* CastHorizontalListView.swift in Sources */,
 				398BC71F2834D85000A28ED3 /* ColorfulView.swift in Sources */,
+				39B8BB89283C79B700C5BE1C /* CastHorizontalItem.swift in Sources */,
 				398BC72C2834D8DD00A28ED3 /* MovieHorizontalItem.swift in Sources */,
 				398BC7212834D85000A28ED3 /* ColorfulView.swift in Sources */,
 			);

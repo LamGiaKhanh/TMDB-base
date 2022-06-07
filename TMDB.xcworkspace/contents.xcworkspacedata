@@ -11,6 +11,9 @@
       location = "group:Core/Core.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:/Users/exe-mac/Desktop/SwiftProject/TMDB/Flux/FluxCore.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Common/Common.xcodeproj">
    </FileRef>
    <FileRef
@@ -32,6 +35,6 @@
       location = "group:SearchMovie/SearchMovie.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:MovieDetail/MovieDetail.xcodeproj">
+      location = "group:SearchMovieFlux/SearchMovieFlux.xcodeproj">
    </FileRef>
 </Workspace>

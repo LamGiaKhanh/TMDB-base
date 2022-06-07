@@ -24,8 +24,16 @@ struct TMDBApp: App, Resolving {
     init() {
         initializers.forEach { $0.performInitialization() }
         _contentNavigator = Store(wrappedValue: ContentNavigatorImpl())
-        UITabBar.appearance().barTintColor = R.color.tab_color()!
-        UITabBar.appearance().tintColor = R.color.steam_bronze()!
+        
+        let standardAppearance = UITabBarAppearance()
+        standardAppearance.configureWithTransparentBackground()
+        standardAppearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterial)
+        UITabBar.appearance().standardAppearance = standardAppearance
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = standardAppearance
+        } else {
+            UITabBar.appearance().standardAppearance = standardAppearance
+        }
         UINavigationBar.appearance().tintColor = R.color.steam_gold()!
         UITableView.appearance().backgroundColor = .clear
     }

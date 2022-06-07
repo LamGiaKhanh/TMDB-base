@@ -66,3 +66,32 @@ public struct FilledButton: View {
             .cornerRadius(buttonSize.height / 2)
     }
 }
+
+public struct TransparentButton: View {
+    let action: () -> Void
+    let size: CGFloat
+    let fontSize: CGFloat
+    let image: Image?
+    
+    @State private var buttonSize = CGSize()
+    
+    public init(buttonType: ButtonSize = .medium, image: Image? = nil, action: @escaping () -> Void) {
+        self.image = image
+        self.size = buttonType.height
+        self.fontSize = buttonType.titleSize
+        self.action = action
+    }
+
+    public var body: some View {
+        Button(action: action, label: {
+            image
+        })
+            .font(R.font.fjallaOneRegular.font(size: fontSize))
+            .padding()
+            .frame(width: size, height: size)
+            .contentShape(Rectangle())
+            .readSize(onChange: { size in
+                buttonSize = size
+            })
+    }
+}

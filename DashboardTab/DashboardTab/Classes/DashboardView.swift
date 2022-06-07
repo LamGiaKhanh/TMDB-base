@@ -19,7 +19,7 @@ struct DashboardView: View {
     }
     
     public var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
                 DashboardHeaderView(viewModel: viewModel)
                 
@@ -28,29 +28,28 @@ struct DashboardView: View {
                 MoviesHorizontalListView(movies: viewModel.nowPlayingList) { movie in
                     viewModel.steps.send(DashboardStep.movieDetail(movie))
                 }
-                .background(R.image.night_sky.image.resizable())
+
                     
                 AppText(.title, "Popular")
 
                 MoviesHorizontalListView(movies: viewModel.popularList) { movie in
                     viewModel.steps.send(DashboardStep.movieDetail(movie))
-                }.background(R.image.night_sky.image.resizable())
+                }
                 
                 
                 AppText(.title, "Top Rated")
 
                 MoviesHorizontalListView(movies: viewModel.topRatedList) { movie in
                     viewModel.steps.send(DashboardStep.movieDetail(movie))
-                }.background(R.image.night_sky.image.resizable())
+                }
                 
 
                 AppText(.title, "Upcoming")
 
                 MoviesHorizontalListView(movies: viewModel.upcomingList) { movie in
                     viewModel.steps.send(DashboardStep.movieDetail(movie))
-                }.background(R.image.night_sky.image.resizable())
+                }
             }
-            .matchParent()
         }.onAppear {
             viewModel.chainingFetch()
         }
@@ -75,7 +74,7 @@ struct DashboardHeaderView: View {
                     .padding(),
                     alignment: .trailing
                 ).background(ColorfulView()
-                                .padding(.bottom, 25))
+                                .padding(.bottom, 20))
         
     }
 }

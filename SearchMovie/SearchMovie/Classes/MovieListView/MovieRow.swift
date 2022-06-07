@@ -56,7 +56,7 @@ public struct MovieRow: View {
                         .appearance(type: .gradient(.angular))
                         .animation(type: .linear())
                     Text(movie?.releaseDate ?? "")
-                        .foregroundColor(R.color.steam_background.color)
+                        .foregroundColor(R.color.content.color)
                         .font(R.font.fjallaOneRegular.font(size: 14))
                         .lineLimit(1)
                         .skeleton(with: loading, size: CGSize(width: 160, height: 20))
@@ -69,7 +69,7 @@ public struct MovieRow: View {
                     .font(.system(size: 12))
                     .lineLimit(3)
                     .truncationMode(.tail)
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .skeleton(with: loading, size: CGSize(width: 200, height: 20))
                     .shape(type: .rectangle)
                     .multiline(lines: 3)
@@ -80,7 +80,6 @@ public struct MovieRow: View {
             .padding(.bottom, 8)
             .listRowBackground(Color.black)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .redacted(reason: movie?.id == 0 ? .placeholder : [])
             .background(R.image.night_sky.image.resizable())
     }
 }

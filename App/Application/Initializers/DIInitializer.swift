@@ -10,7 +10,6 @@ import Domain
 import Data
 import DashboardTab
 import SearchMovie
-import MovieDetail
 import Common
 
 class DIInitializer: Initializable {
@@ -22,8 +21,7 @@ class DIInitializer: Initializable {
             AppServicesAssembly(),
             ScenesAssembly(),
             DashboardTabAssembly(),
-            SearchMovieAssembly(),
-            MovieDetailAssembly()
+            SearchMovieAssembly()
         ])
     }
 }

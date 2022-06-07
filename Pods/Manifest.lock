@@ -26,6 +26,8 @@ PODS:
   - AWSPluginsCore (1.24.0):
     - Amplify (= 1.24.0)
     - AWSCore (~> 2.27.0)
+  - CombineExt (1.6.0)
+  - Introspect (0.1.4)
   - IQKeyboardManagerSwift (6.5.10)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
@@ -41,6 +43,7 @@ PODS:
   - SDWebImageSwiftUI (2.0.2):
     - SDWebImage (~> 5.10)
   - SkeletonUI (1.0.7)
+  - Stinsen (2.0.7)
   - Swinject (2.8.1)
   - TEQNetwork (1.0.0):
     - Alamofire (~> 5.1.0)
@@ -50,11 +53,14 @@ PODS:
 DEPENDENCIES:
   - Amplify
   - AmplifyPlugins/AWSCognitoAuthPlugin
+  - CombineExt
+  - Introspect
   - IQKeyboardManagerSwift
   - Moya
   - R.swift
   - SDWebImageSwiftUI
   - SkeletonUI
+  - Stinsen
   - Swinject
   - TEQNetwork (from `https://github.com/Teqnological-Asia/TEQNetwork.git`)
   - WaterfallGrid (~> 1.0.0)
@@ -70,6 +76,8 @@ SPEC REPOS:
     - AWSCore
     - AWSMobileClient
     - AWSPluginsCore
+    - CombineExt
+    - Introspect
     - IQKeyboardManagerSwift
     - Moya
     - R.swift
@@ -78,6 +86,7 @@ SPEC REPOS:
     - SDWebImage
     - SDWebImageSwiftUI
     - SkeletonUI
+    - Stinsen
     - Swinject
     - WaterfallGrid
 
@@ -100,6 +109,8 @@ SPEC CHECKSUMS:
   AWSCore: f5ad61eafb16c9f68611046e98b87cc2f5c482d0
   AWSMobileClient: 5bda79e67970b40e70bfafd9e0564fa33b872b20
   AWSPluginsCore: c8aa73551a541a11b24e72a9f145bbfc01a56379
+  CombineExt: b4160c69139d186eb333fb0a3eebc15b55b0b7ea
+  Introspect: b62c4dd2063072327c21d618ef2bedc3c87bc366
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
@@ -108,10 +119,11 @@ SPEC CHECKSUMS:
   SDWebImage: 631cf572cc93dfdfe54162e556410a61f1141928
   SDWebImageSwiftUI: 8a3923c95108312b03a599ec1498754af55a6819
   SkeletonUI: 18fbcd8698480432852d7e30a65b8d5e138266f0
+  Stinsen: b1c34553e21ca4f1ba53bc29cb30e71e8cce811c
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
   TEQNetwork: 6470f1d6f6f2da2bf3d3236d152744da976a11fd
   WaterfallGrid: 0554a759d9a8aa136fc1769480ddb01bc6fb94b9
 
-PODFILE CHECKSUM: 396e8fa52684071d8886618cd5a5423e80f65db5
+PODFILE CHECKSUM: 068326602a4b3305c90093354f2aae1a1bef3ebb
 
 COCOAPODS: 1.11.2

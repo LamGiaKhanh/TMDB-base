@@ -13,22 +13,21 @@ import Resources
 public struct MoviesHorizontalListView: View {
     
     public var movies: [Movie]
-    
-    public var movieSelected: ((Movie) -> Void)
+    public var movieSelected: ((Movie) -> Void)?
 
-    public init(movies: [Movie], movieSelected: @escaping ((Movie) -> Void)) {
+    public init(movies: [Movie], movieSelected: ((Movie) -> Void)? = nil) {
         self.movies = movies
         self.movieSelected = movieSelected
     }
     
     public var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .top, spacing: 4) {
                 SkeletonForEach(with: movies, quantity: 6) { loading , movie  in
                     MovieHorizontalItem(movie: movie, loading: loading)
                         .padding(.horizontal, 4)
                         .onTapGesture {
-                            if let movie = movie {
+                            if let movie = movie, let movieSelected = movieSelected {
                                 movieSelected(movie)
                                  print("Tapped movie \(movie.title)")
                             }
@@ -36,6 +35,7 @@ public struct MoviesHorizontalListView: View {
                 }
             }
         }
+        .background(R.image.night_sky.image.resizable())
     }
 }
 

@@ -14,7 +14,12 @@ public class MovieDetailAssembly: Assembly {
         container.register(MovieDetailViewModel.self) { (r, movie: Movie) in
             MovieDetailViewModelImpl(movie: movie)
         }
+        
+        container.register(MovieDetailNavigator.self) { (r, movie: Movie, isRootView: Bool) in
+            MovieDetailNavigatorImpl(movie: movie, isRootView: isRootView)
+        }
     }
     
     public init() { }
 }
+

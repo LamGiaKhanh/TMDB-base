@@ -20,5 +20,18 @@ public class SearchMovieAssembly: Assembly {
         container.register(SearchMovieViewModel.self) { r in
             SearchMovieViewModelImpl()
         }
+        
+        container.register(MovieDetailViewModel.self) { (r, movie: Movie) in
+            MovieDetailViewModelImpl(movie: movie)
+        }
+        
+        container.register(MovieDetailNavigator.self) { (r, movie: Movie, isRootView: Bool) in
+            MovieDetailNavigatorImpl(movie: movie, isRootView: isRootView)
+        }
+        
+        container.register(TestViewModel.self) { r in
+            TestViewModelImpl()
+        }
+        
     }
 }

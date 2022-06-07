@@ -7,6 +7,7 @@
 
 import Foundation
 import Core
+import Domain
 
 public class DashboardTabAssembly: Assembly {
     public init() { }
@@ -22,6 +23,14 @@ public class DashboardTabAssembly: Assembly {
         
         container.register(TestViewModel.self) { r in
             TestViewModelImpl()
+        }
+        
+        container.register(MovieDetailViewModel.self) { (r, movie: Movie) in
+            MovieDetailViewModelImpl(movie: movie)
+        }
+        
+        container.register(MovieDetailNavigator.self) { (r, movie: Movie, isRootView: Bool) in
+            MovieDetailNavigatorImpl(movie: movie, isRootView: isRootView)
         }
     }
 }
